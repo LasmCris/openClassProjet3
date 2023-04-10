@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 768px;
+    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 98%;
+    height: 10%;
+    border: solid 2px orange;
+    margin: 5px;
+}
+
+.header__content {
+    width: 99%;
+    border: solid 2px black;
+    margin: 2px;
+    display: flex;
+}
+
+.header__nav {
+    width: 20%;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.header__figure {
+    width: 78%;
+    border: solid 2px black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    width: 80%;
+} 
+
+
+main {
+    width: 98%;
+    height: 70%;
+    border: solid 2px orange;
+    margin: 5px;
+}
+
+.main__figure {
+    width: 99%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.main__photo {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    margin: 2px;
+}
+
+.main__menu {
+    width: 99%;
+    height: 78%
+    background-color: #F2F2F2;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    margin: 10px 2px 2px 2px;
+}
+
+.menu__content1 {
+    width: 99%;
+    height: 9%;
+    display: flex;
+    border: solid 2px black;
+    margin: 40px 2px 2px 2px;
+}
+
+.menu__titreH1 {
+    width: 68%;
+    border: solid 2px black;
+    margin: 5px 2px 2px 2px;
+}
+
+.menu__fav {
+    width: 30%;
+    border: solid 2px black;
+    margin: 5px 2px 2px 2px;
+}
+
+.menu__EPD {
+    width: 99%;
+    border: solid 2px black;
+    margin: 30px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__titreH2 {
+    width: 99%;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.menu__liens {
+    width: 99%;
+    height: 32%;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.menu__titreH3 {
+    width: 98%;
+    border: solid 2px black;
+    margin: 2px 2px 2px 5px
+}
+
+.menu__accompagnementPrix {
+    width: 98%;
+    display: flex;
+    border: solid 2px black;
+    margin: 2px 2px 2px 5px
+}
+
+.menu__accompagnement {
+    width: 78%;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.menu__prix {
+    width: 20%;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+.menu__btnCmd {
+    width: 99%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    margin: 2px;
+}
+
+
+.menu__btnCmd > button {
+    width: 50%;
+    background-color: #FF79DA;
+    border-radius: 80px;
+    padding: 20px;
+}
+
+.footer__content {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 2px;
+
+}
+
+.footer__figure {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 2px;
+    width: 98%;
+    border: solid 2px black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    color: white;
+    width: 98%;
+}
+
+.footer__infoIcone {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 5px;
+    display: flex;
+}
+
+
+.footer__info {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 5px;
+}
+
+.footer__info > i, p {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 5px;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    width: 98%;
+    height: 20%;
+    border: solid 2px white;
+    margin: 5px;
+}
