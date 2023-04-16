@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 238px;
+  box-sizing: border-box;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 98%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  border: solid 2px black;
+  margin: 5px;
+}
+header .header__figure {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+header .header__logo {
+  width: 98%;
+  height: auto;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+main {
+  width: 98%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 5px;
+}
+
+.sousHeader {
+  width: 97%;
+  background-color: rgb(247, 244, 244);
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 2px;
+}
+.sousHeader .sousHeader__form {
+  width: 99%;
+  height: 53px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.sousHeader .fa-location-dot {
+  border: solid 2px black;
+  margin: 10px;
+}
+
+.sousHeader .sousHeader__lieu {
+  border: solid 2px black;
+  margin: 10px;
+}
+
+.sousHeader .sousHeader__titreH1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 35px;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.sousHeader .sousHeader__paragraphe {
+  text-align: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.sousHeader .sousHeader__contentBtn {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 50px 0;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.sousHeader .sousHeader__btnExplorer {
+  border-radius: 50px;
+  background-color: blueviolet;
+  padding: 20px;
+}
+
+.fonctionnement {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 50px 2px 2px 2px;
+}
+.fonctionnement .fonctionnement__titreH2 {
+  border: solid 2px black;
+  margin: 2px 2px 20px 2px;
+}
+
+.fonctionnement .fonctionnement__artcl {
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.fonctionnement .fonctionnement__ovale {
+  background-color: rgb(237, 236, 236);
+  width: 95%;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.fonctionnement .ovale__nbr {
+  text-align: center;
+  color: white;
+  background: purple;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+.fonctionnement .ovale__icnPara {
+  width: 85%;
+  border: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fonctionnement .fonctionnement__paragraphe {
+  width: 90%;
+  border: solid 2px black;
+}
+
+.restaurent {
+  width: 99%;
+  background-color: rgb(247, 244, 244);
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 20px 2px 2px 2px;
+}
+.restaurent .restaurent__titreH2 {
+  border: solid 2px black;
+  margin: 20px 2px;
+}
+
+.restaurent .restaurent__grpPhotos {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.restaurent .restaurent_liens {
+  width: 98%;
+  height: 500px;
+  margin: 5px;
+  display: flex;
+  border-radius: 20px;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurent .restaurent__figure {
+  width: 99%;
+  height: 97%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.restaurent .restaurent__photos {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurent .restaurent__nouveau {
+  position: absolute;
+}
+
+.restaurent .restaurent__figcaption {
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px black;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.restaurent .restaurent__H3Quartier {
+  width: 89%;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.restaurent .restaurent__H3 {
+  width: 98%;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.restaurent .restaurent__quartier {
+  width: 98%;
+  border-radius: 0px 0px 20px 20px;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+.restaurent .restaurent__fav {
+  border-radius: 0px 0px 20px 20px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  width: 98%;
+  height: 20%;
+  border: solid 2px rgb(255, 255, 255);
+  margin: 5px;
+}
+footer .footer__content {
+  border: solid 2px rgb(255, 255, 255);
+  margin: 2px;
+}
+
+footer .footer__figure {
+  border: solid 2px rgb(255, 255, 255);
+  margin: 2px;
+}
+
+footer .footer__logo {
+  width: 98%;
+  color: white;
+}
+
+footer .footer__infoPlusIcone {
+  border: solid 2px rgb(255, 255, 255);
+  margin: 5px;
+  display: flex;
+}
+
+footer .footer__info {
+  border: solid 2px rgb(255, 255, 255);
+  margin: 5px;
+}
+
+.footer__infoPlusIcone > i, p {
+  border: solid 2px rgb(255, 255, 255);
+  margin: 5px;
+}/*# sourceMappingURL=inStyle.css.map */

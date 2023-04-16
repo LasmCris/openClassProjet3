@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 238px;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//Ceci est le block HEADER
+header {
+  width: 98%;
+  height: 10%;
+  border: solid 2px orange;
+  margin: 5px;
+
+  .header__content {
+    width: 99%;
+    border: solid 2px black;
+    margin: 2px;
+    display: flex;
+  }
+}
+
+header {
+  .header__nav {
+    width: 20%;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+header {
+  .header__figure {
+    width: 78%;
+    border: solid 2px black;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+header {
+  .header__logo {
+    width: 80%;
+  }
+}
+
+//Ceci est le block MAIN
+main {
+  width: 98%;
+  height: 70%;
+  border: solid 2px orange;
+  margin: 5px;
+
+  .main__figure {
+    width: 99%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+main {
+  .main__photo {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    margin: 2px;
+  }
+}
+
+//Ceci est le block MENU
+.main__menu {
+  width: 99%;
+  height: 78%;
+  background-color: #f2f2f2;
+  border-radius: 50px 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 10px 2px 2px 2px;
+}
+
+//Ceci est le block nomResto
+.nomResto {
+  width: 99%;
+  height: 9%;
+  display: flex;
+  border: solid 2px black;
+  margin: 40px 2px 2px 2px;
+}
+
+.nomResto {
+  .nomResto__titreH1 {
+    width: 68%;
+    border: solid 2px black;
+    margin: 5px 2px 2px 2px;
+  }
+}
+
+.nomResto {
+  .nomResto__fav {
+    width: 30%;
+    border: solid 2px black;
+    margin: 5px 2px 2px 2px;
+  }
+}
+
+//Ceci est le block MENU_EPD (EPD pour "plat entré dessert")
+.menu__EPD {
+  width: 99%;
+  border: solid 2px black;
+  margin: 30px 2px 2px 2px;
+  display: flex;
+  flex-direction: column;
+
+  .EPD__titreH2 {
+    width: 99%;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+.menu__EPD {
+  .EPD__liens {
+    width: 99%;
+    height: 32%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+//Ceci est le block LIENS
+.EPD__liens {
+  .liens__titreH3 {
+    width: 98%;
+    border: solid 2px black;
+    margin: 2px 2px 2px 5px;
+  }
+}
+
+.EPD__liens {
+  .liens__accompagnementEtPrix {
+    width: 98%;
+    display: flex;
+    border: solid 2px black;
+    margin: 2px 2px 2px 5px;
+  }
+}
+
+//Ceci est le block ACCOMPAGNEMENT ET PRIX
+.liens__accompagnementEtPrix {
+  .accompagnementEtPrix__accomp {
+    width: 78%;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+.liens__accompagnementEtPrix {
+  .accompagnementEtPrix__prix {
+    width: 20%;
+    border: solid 2px black;
+    margin: 2px;
+  }
+}
+
+//Ceci est le block MENU_BTN
+.menu__btnCmd {
+  width: 99%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2px;
+
+        .btnCmd {
+        width: 50%;
+        background-color: #ff79da;
+        border-radius: 80px;
+        padding: 20px;
+        }
+}
+
+
+// Ceci est le block "FOOTER"
+footer {
+    color: white;
+    background-color: black;
+    width: 98%;
+    height: 20%;
+    border: solid 2px rgb(255, 255, 255);
+    margin: 5px;
+
+        .footer__content {
+            border: solid 2px rgb(255, 255, 255);
+            margin: 2px;
+        }
+}
+
+footer {
+        .footer__figure {
+            border: solid 2px rgb(255, 255, 255);
+            margin: 2px;
+        }
+}
+
+
+footer {
+        .footer__logo {
+            width: 98%;
+            color: white;
+        }
+}
+
+footer {
+        .footer__infoPlusIcone {
+            border: solid 2px rgb(255, 255, 255);
+            margin: 5px;
+            display: flex;
+        }
+}
+
+footer {
+        .footer__info {
+            border: solid 2px rgb(255, 255, 255);
+            margin: 5px;
+        }
+}
+
+.footer__infoPlusIcone > i, p {
+    border: solid 2px rgb(255, 255, 255);
+    margin: 5px;
+}
