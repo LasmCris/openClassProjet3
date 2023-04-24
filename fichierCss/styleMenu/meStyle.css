@@ -1,39 +1,32 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   min-width: 238px;
-  border: solid 2px red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 header {
-  width: 98%;
-  height: 10%;
-  border: solid 2px orange;
-  margin: 5px;
-}
-header .header__content {
-  width: 99%;
-  border: solid 2px black;
-  margin: 2px;
+  width: 100%;
+  height: 73px;
   display: flex;
 }
-
 header .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 header .header__figure {
-  width: 78%;
-  border: solid 2px black;
-  margin: 2px;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,158 +37,196 @@ header .header__logo {
 }
 
 main {
-  width: 98%;
-  height: 70%;
-  border: solid 2px orange;
-  margin: 5px;
+  width: 100%;
 }
 main .main__figure {
-  width: 99%;
-  height: 20%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px black;
-  margin: 2px;
+  flex-direction: column;
 }
 
-main .main__photo {
-  width: 99%;
-  height: 99%;
+.main__figure .main__photo {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 2px;
 }
 
-.main__menu {
-  width: 99%;
-  height: 78%;
+.main__figure .main__detailResto {
+  width: 100%;
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
-  margin: 10px 2px 2px 2px;
+  position: relative;
+  bottom: 55px;
 }
 
-.nomResto {
-  width: 99%;
-  height: 9%;
+.main__detailResto .detailResto__titreH1Like {
+  width: 100%;
   display: flex;
-  border: solid 2px black;
   margin: 40px 2px 2px 2px;
 }
 
-.nomResto .nomResto__titreH1 {
+.detailResto__titreH1Like .detailResto__titreH1 {
   width: 68%;
-  border: solid 2px black;
   margin: 5px 2px 2px 2px;
 }
 
-.nomResto .nomResto__fav {
+.detailResto__titreH1Like .fa-regular {
   width: 30%;
-  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 5px 2px 2px 2px;
+  font-size: 40px;
 }
 
-.menu__EPD {
+.detailResto__listeEPDbtn {
   width: 99%;
-  border: solid 2px black;
   margin: 30px 2px 2px 2px;
   display: flex;
   flex-direction: column;
 }
-.menu__EPD .EPD__titreH2 {
+.detailResto__listeEPDbtn .listeEPDbtn {
   width: 99%;
-  border: solid 2px black;
-  margin: 2px;
+  margin: 45px 2px 2px 2px;
 }
 
-.menu__EPD .EPD__liens {
+.listeEPDbtn .EPDTitreH2EtItem {
   width: 99%;
-  height: 32%;
-  border-radius: 20px;
-  background-color: #ffffff;
-  border: solid 2px black;
-  margin: 2px;
 }
 
-.EPD__liens .liens__titreH3 {
-  width: 98%;
-  border: solid 2px black;
-  margin: 2px 2px 2px 5px;
-}
-
-.EPD__liens .liens__accompagnementEtPrix {
-  width: 98%;
-  display: flex;
-  border: solid 2px black;
-  margin: 2px 2px 2px 5px;
-}
-
-.liens__accompagnementEtPrix .accompagnementEtPrix__accomp {
-  width: 78%;
-  border: solid 2px black;
-  margin: 2px;
-}
-
-.liens__accompagnementEtPrix .accompagnementEtPrix__prix {
-  width: 20%;
-  border: solid 2px black;
-  margin: 2px;
-}
-
-.menu__btnCmd {
+.listeEPDbtn--bouton {
   width: 99%;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 2px;
 }
-.menu__btnCmd .btnCmd {
+.listeEPDbtn--bouton .btnCmd {
   width: 50%;
   background-color: #ff79da;
   border-radius: 80px;
   padding: 20px;
 }
 
+.EPDTitreH2EtItem .EPDTitreH2EtItem__titreH2EtDivBordure {
+  width: 99%;
+}
+
+.EPDTitreH2EtItem__titreH2EtDivBordure .titreH2EtDivBordure__h2 {
+  margin-bottom: 10px;
+  transition: background-color 3s;
+}
+
+.titreH2EtDivBordure__h2:hover {
+  background-color: #ff79da;
+}
+
+.EPDTitreH2EtItem__titreH2EtDivBordure .titreH2EtDivBordure__divBordure {
+  width: 63px;
+  height: 2px;
+  border: 2px solid #35bacb;
+}
+
+.EPDTitreH2EtItem .EPDTitreH2EtItem__item {
+  width: 99%;
+  height: 85px;
+  border-radius: 18px;
+  margin: 20px 2px 2px 2px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.EPDTitreH2EtItem__item .item__h3DescrpPrix {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.EPDTitreH2EtItem__item .item__anim {
+  width: 10%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 18px 18px 0;
+  display: flex;
+}
+.EPDTitreH2EtItem__item .fa-regular {
+  width: 90px;
+  background-color: #99E2D0;
+  color: #ffffff;
+  font-size: 30px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item__anim:hover {
+  cursor: pointer;
+  width: 100%;
+  animation-name: translationPlat;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+
+@keyframes translationPlat {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 75%;
+  }
+}
+.item__h3DescrpPrix .h3DescrpPrix__h3 {
+  margin: 2px 0 7px 15px;
+}
+.item__h3DescrpPrix .h3DescrpPrix__descrpPrix {
+  margin: 2px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.item__h3DescrpPrix .descrpPrix__prix {
+  margin-right: 35px;
+}
+
 footer {
   color: white;
-  background-color: black;
-  width: 98%;
+  background-color: rgb(49, 49, 49);
+  width: 100%;
   height: 20%;
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
 }
-footer .footer__content {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 2px;
+footer .footer__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer__item {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+footer .footer__item--mrgnBot {
+  margin-bottom: 40px;
 }
 
 footer .footer__figure {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 2px;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
 }
 
 footer .footer__logo {
-  width: 98%;
-  color: white;
+  width: 100%;
+  filter: invert(100);
 }
 
-footer .footer__infoPlusIcone {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
-  display: flex;
-}
-
-footer .footer__info {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
-}
-
-.footer__infoPlusIcone > i, p {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
+.footer__item i {
+  margin-right: 10px;
 }/*# sourceMappingURL=meStyle.css.map */

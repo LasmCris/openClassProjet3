@@ -1,176 +1,144 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   min-width: 238px;
-  box-sizing: border-box;
-  border: solid 2px red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 header {
-  width: 98%;
-  height: 10%;
+  width: 100%;
+  height: 70px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 5px;
 }
 header .header__figure {
-  width: 97%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 header .header__logo {
-  width: 98%;
+  width: 50%;
   height: auto;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 main {
-  width: 98%;
-  height: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
-  margin: 5px;
 }
 
 .sousHeader {
-  width: 97%;
-  background-color: rgb(247, 244, 244);
+  width: 100%;
+  background-color: rgb(241, 240, 240);
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
-  margin: 2px;
 }
 .sousHeader .sousHeader__form {
-  width: 99%;
-  height: 53px;
-  background-color: rgb(201, 201, 201);
+  width: 100%;
+  height: 57px;
+  border-top: 3px solid #dbdbdb;
+  background-color: rgb(227, 227, 227);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 .sousHeader .fa-location-dot {
-  border: solid 2px black;
-  margin: 10px;
-}
-
-.sousHeader .sousHeader__lieu {
-  border: solid 2px black;
-  margin: 10px;
+  margin-right: 15px;
 }
 
 .sousHeader .sousHeader__titreH1 {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 35px;
-  border: solid 2px black;
-  margin: 2px;
+  font-size: 33px;
 }
 
 .sousHeader .sousHeader__paragraphe {
   text-align: center;
-  border: solid 2px black;
-  margin: 2px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .sousHeader .sousHeader__contentBtn {
   display: flex;
   justify-content: center;
   padding: 25px 0 50px 0;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 .sousHeader .sousHeader__btnExplorer {
   border-radius: 50px;
-  background-color: blueviolet;
+  background-color: #9356DC;
   padding: 20px;
+  color: #ffffff;
+  font-size: 15px;
 }
 
 .fonctionnement {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
   margin: 50px 2px 2px 2px;
 }
 .fonctionnement .fonctionnement__titreH2 {
-  border: solid 2px black;
-  margin: 2px 2px 20px 2px;
+  margin: 2px 2px 20px 30px;
 }
 
-.fonctionnement .fonctionnement__artcl {
-  width: 99%;
+.fonctionnement .fonctionnement__items {
+  background-color: rgb(242, 242, 242);
+  width: 86%;
+  height: 95px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 2px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  box-shadow: 2px 2px 10px #cccccc;
 }
 
-.fonctionnement .fonctionnement__ovale {
-  background-color: rgb(237, 236, 236);
-  width: 95%;
-  height: 70px;
-  border-radius: 20px;
+.fonctionnement__items .items__nbr {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 2px;
-}
-
-.fonctionnement .ovale__nbr {
-  text-align: center;
   color: white;
-  background: purple;
-  font-size: 20px;
-  height: 20px;
-  width: 20px;
+  background: #9356DC;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  border: solid 2px black;
+  position: relative;
+  right: 14px;
 }
 
-.fonctionnement .ovale__icnPara {
-  width: 85%;
-  border: solid 2px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.fonctionnement__items .items__solid {
+  margin-right: 10px;
 }
 
-.fonctionnement .fonctionnement__paragraphe {
+.fonctionnement__items .items__paragraphe {
   width: 90%;
-  border: solid 2px black;
 }
 
 .restaurent {
-  width: 99%;
+  width: 100%;
   background-color: rgb(247, 244, 244);
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
   margin: 20px 2px 2px 2px;
 }
 .restaurent .restaurent__titreH2 {
-  border: solid 2px black;
-  margin: 20px 2px;
+  margin-top: 47px;
+  margin-left: 23px;
 }
 
 .restaurent .restaurent__grpPhotos {
@@ -178,36 +146,33 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: solid 2px black;
-  margin: 2px;
-}
-
-.restaurent .restaurent_liens {
-  width: 98%;
-  height: 500px;
-  margin: 5px;
-  display: flex;
-  border-radius: 20px;
-  border: solid 2px black;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+.restaurent .restaurent_liens {
+  width: 93%;
+  height: 350px;
+  margin: 30px 5px;
+  display: flex;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px #cccccc;
+}
+
 .restaurent .restaurent__figure {
-  width: 99%;
-  height: 97%;
+  position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 .restaurent .restaurent__photos {
   width: 100%;
-  height: 80%;
+  height: 75%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -215,37 +180,36 @@ main {
 
 .restaurent .restaurent__nouveau {
   position: absolute;
+  top: 10px;
+  right: 5px;
+  background-color: #59ddc3;
+  color: #378777;
+  padding: 5px;
 }
 
 .restaurent .restaurent__figcaption {
-  height: 15%;
+  height: 25%;
   display: flex;
   justify-content: space-between;
-  border: solid 2px black;
-  border-radius: 0px 0px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
 }
 
 .restaurent .restaurent__H3Quartier {
   width: 89%;
-  border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: solid 2px black;
-  margin: 2px;
+  justify-content: center;
 }
 
 .restaurent .restaurent__H3 {
-  width: 98%;
-  border: solid 2px black;
-  margin: 2px;
+  width: 100%;
+  margin: 2px 0 10px 10px;
 }
 
 .restaurent .restaurent__quartier {
-  width: 98%;
-  border-radius: 0px 0px 20px 20px;
-  border: solid 2px black;
-  margin: 2px;
+  width: 100%;
+  margin: 2px 0 10px 10px;
 }
 
 .restaurent .restaurent__fav {
@@ -254,45 +218,43 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
-  margin: 2px;
 }
 
 footer {
   color: white;
-  background-color: black;
-  width: 98%;
+  background-color: rgb(49, 49, 49);
+  width: 100%;
   height: 20%;
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
 }
-footer .footer__content {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 2px;
+footer .footer__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer__item {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+footer .footer__item--mrgnBot {
+  margin-bottom: 40px;
 }
 
 footer .footer__figure {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 2px;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
 }
 
 footer .footer__logo {
-  width: 98%;
-  color: white;
+  width: 100%;
+  filter: invert(100);
 }
 
-footer .footer__infoPlusIcone {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
-  display: flex;
-}
-
-footer .footer__info {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
-}
-
-.footer__infoPlusIcone > i, p {
-  border: solid 2px rgb(255, 255, 255);
-  margin: 5px;
+.footer__item i {
+  margin-right: 10px;
 }/*# sourceMappingURL=inStyle.css.map */
