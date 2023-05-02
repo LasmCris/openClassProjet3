@@ -50,7 +50,7 @@ main .main__photo {
      object-fit: cover;
 }
 
-.main .main__detailResto {
+main .main__detailResto {
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
