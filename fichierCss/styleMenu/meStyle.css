@@ -17,41 +17,40 @@ header {
   width: 100%;
   height: 73px;
   display: flex;
+  align-items: center;
 }
 header .header__nav {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
 }
 
-header .header__figure {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__nav .fa-solid {
+  font-size: 45px;
 }
 
 header .header__logo {
-  width: 80%;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 
 main {
   width: 100%;
-}
-main .main__figure {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-
-.main__figure .main__photo {
+main .main__photo {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.main__figure .main__detailResto {
+.main .main__detailResto {
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
@@ -130,6 +129,7 @@ main .main__figure {
 }
 
 .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
+  position: relative;
   width: 99%;
   height: 85px;
   border-radius: 18px;
@@ -140,56 +140,119 @@ main .main__figure {
 }
 
 .EPDTitreH2EtItem__item .item__h3DescrpPrix {
-  width: 80%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 18px;
+  background-color: #ffffff;
+  transition: width 2s;
 }
 .EPDTitreH2EtItem__item .item__anim {
-  width: 10%;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
   height: 100%;
   background-color: #99E2D0;
-  border-radius: 0 18px 18px 0;
+  border-radius: 18px;
   display: flex;
+  align-items: center;
 }
 .EPDTitreH2EtItem__item .fa-regular {
-  width: 90px;
+  width: 100%;
   background-color: #99E2D0;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 32px;
   border-radius: 18px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.item__anim:hover {
+.item__h3DescrpPrix:hover {
   cursor: pointer;
-  width: 100%;
-  animation-name: translationPlat;
-  animation-duration: 2s;
-  animation-direction: reverse;
+  width: 80%;
 }
 
-@keyframes translationPlat {
-  from {
-    width: 100%;
+.animApparition {
+  animation: apparition 2s 1s ease forwards;
+  opacity: 0;
+}
+
+.item1 {
+  animation-delay: 1s;
+}
+
+.item2 {
+  animation-delay: 1.3s;
+}
+
+.item3 {
+  animation-delay: 1.6s;
+}
+
+.item4 {
+  animation-delay: 1.9s;
+}
+
+.item5 {
+  animation-delay: 2.2s;
+}
+
+.item6 {
+  animation-delay: 2.5s;
+}
+
+.item7 {
+  animation-delay: 2.8s;
+}
+
+.item8 {
+  animation-delay: 3.1s;
+}
+
+.item9 {
+  animation-delay: 3.4s;
+}
+
+.item10 {
+  animation-delay: 3.7s;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(-32px);
   }
-  to {
-    width: 75%;
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
 .item__h3DescrpPrix .h3DescrpPrix__h3 {
   margin: 2px 0 7px 15px;
+  width: 100%;
 }
 .item__h3DescrpPrix .h3DescrpPrix__descrpPrix {
   margin: 2px 15px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.item__h3DescrpPrix .descrpPrix__prix {
+
+.h3DescrpPrix__descrpPrix .descrpPrix__descrp {
+  width: 80%;
+}
+.h3DescrpPrix__descrpPrix .descrpPrix__prix {
+  width: 20%;
   margin-right: 35px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer {
@@ -212,9 +275,6 @@ footer .footer__item {
 
 footer .footer__item--mrgnBot {
   margin-bottom: 40px;
-}
-
-footer .footer__figure {
   width: 43%;
   display: flex;
   justify-content: center;

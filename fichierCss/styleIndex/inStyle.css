@@ -20,15 +20,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .header__figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 header .header__logo {
-  width: 50%;
-  height: auto;
+  width: 40%;
+  height: 50%;
 }
 
 main {
@@ -94,6 +88,18 @@ main {
   margin: 2px 2px 20px 30px;
 }
 
+.fonctionnement .fonctionnement__grpItems {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 2px 2px 2px;
+}
+
+@media (min-width: 768px) {
+  .fonctionnement__grpItems {
+    flex-direction: row;
+  }
+}
+
 .fonctionnement .fonctionnement__items {
   background-color: rgb(242, 242, 242);
   width: 86%;
@@ -117,15 +123,16 @@ main {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  position: relative;
-  right: 14px;
+  position: absolute;
+  left: 14px;
 }
 
 .fonctionnement__items .items__solid {
-  margin-right: 10px;
+  margin-left: 30px;
 }
 
 .fonctionnement__items .items__paragraphe {
+  margin-left: 30px;
   width: 90%;
 }
 
@@ -240,9 +247,6 @@ footer .footer__item {
 
 footer .footer__item--mrgnBot {
   margin-bottom: 40px;
-}
-
-footer .footer__figure {
   width: 43%;
   display: flex;
   justify-content: center;
