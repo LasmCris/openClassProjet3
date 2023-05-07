@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+a:visited {
+  color: black;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   min-width: 238px;
@@ -133,10 +137,12 @@ main {
   align-items: center;
 
   .btnCmd {
-    width: 50%;
-    background-color: #ff79da;
-    border-radius: 80px;
-    padding: 20px;
+    width: 35%;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    border-radius: 137px;
+    padding: 15px;
+    font-size: 18px;
+    color: #ffffff;
   }
 }
 
@@ -241,10 +247,6 @@ main {
 
 
 
-  
-
-
-
 
 
 
@@ -343,6 +345,7 @@ main {
 .h3DescrpPrix__descrpPrix {
   .descrpPrix__descrp {
     width: 80%;
+    font-weight: 100;
   }
 
   .descrpPrix__prix {
@@ -366,6 +369,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
   }
 }
 
@@ -382,7 +386,6 @@ footer {
     margin-bottom: 40px;
     width: 43%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 26px;
   }
@@ -391,7 +394,7 @@ footer {
 
 footer {
   .footer__logo {
-    width: 100%;
+    width: 65%;
     filter: invert(100);
   }
 }
