@@ -27,7 +27,6 @@ header {
   .header__nav {
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 20%;
   }
@@ -36,6 +35,7 @@ header {
 .header__nav {
   .fa-solid {
     font-size: 45px;
+    margin-left: 25px;
   }
 }
 
@@ -43,9 +43,10 @@ header {
 header {
   .header__logo {
     width: 47%;
+    height: 90%;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin: 5px 0 5px 50px;
   }
 }
 
@@ -55,6 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: #f2f2f2;
 
     .main__photo {
       width: 100%;
@@ -87,14 +89,15 @@ main {
 
 .detailResto__titreH1Like {
   .detailResto__titreH1 {
-    width: 68%;
+    width: 85%;
     margin: 5px 2px 2px 2px;
+    font-family: 'Shrikhand', cursive;
   }
 }
 
 .detailResto__titreH1Like {
   .fa-regular {
-    width: 30%;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,12 +140,13 @@ main {
   align-items: center;
 
   .btnCmd {
-    width: 35%;
+    width: 44%;
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
     border-radius: 137px;
     padding: 15px;
     font-size: 18px;
     color: #ffffff;
+    border: none;
   }
 }
 
@@ -156,8 +160,9 @@ main {
 //Ceci est le block TITREH2-DIVBORDURE
 .EPDTitreH2EtItem__titreH2EtDivBordure {
   .titreH2EtDivBordure__h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: background-color 3s ;
+    font-weight: 100;
   }
 }
 
@@ -170,7 +175,7 @@ main {
   .titreH2EtDivBordure__divBordure {
     width: 63px;
     height: 2px;
-    border: 2px solid #35bacb;
+    border: 1px solid #35bacb;
   }
 }
   
