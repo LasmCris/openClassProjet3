@@ -76,6 +76,7 @@ main .main__detailResto {
   width: 85%;
   margin: 5px 2px 2px 2px;
   font-family: "Shrikhand", cursive;
+  font-size: 50px;
 }
 
 .detailResto__titreH1Like .fa-regular {
@@ -89,7 +90,6 @@ main .main__detailResto {
 
 .detailResto__listeEPDbtn {
   width: 99%;
-  margin: 30px 2px 2px 2px;
   display: flex;
   flex-direction: column;
 }
