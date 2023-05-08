@@ -1,0 +1,32 @@
+//Ceci est le block HEADER
+header {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  align-items: center;
+
+  .header__nav {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+}
+
+.header__nav {
+  .fa-solid {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+}
+
+
+header {
+  .header__logo {
+    width: 47%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 50px;
+  }
+}

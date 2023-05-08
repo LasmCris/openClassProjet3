@@ -1,0 +1,69 @@
+// Ceci est le block "SOUSHEADER"
+.sousHeader {
+  position: relative;
+  width: 100%;
+  background-color: rgb(241, 240, 240);
+  display: flex;
+  flex-direction: column;
+
+  .sousHeader__form {
+    height: 57px;
+    border-top: 3px solid #dbdbdb;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+}
+
+.sousHeader {
+  .fa-location-dot {
+    position: absolute;
+    top: 19px;
+    left: 110px;
+    margin-right: 10px;
+  }
+}
+
+::placeholder {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.sousHeader {
+  .sousHeader__titreH1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 33px;
+  }
+}
+
+.sousHeader {
+  .sousHeader__paragraphe {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+
+.sousHeader {
+  .sousHeader__contentBtn {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 50px 0;
+  }
+}
+
+.sousHeader {
+  .sousHeader__btnExplorer {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    border-radius: 137px;
+    padding: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+  }
+}

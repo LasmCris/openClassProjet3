@@ -1,0 +1,14 @@
+//Ceci est le block HEADER
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header__logo {
+    width: 40%;
+    height: 70%;
+  }
+}
+
