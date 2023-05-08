@@ -141,7 +141,6 @@ main {
     transition: background-color 3s;
     font-weight: 100;
   }
-  
 }
 
 .titreH2EtDivBordure__h2:hover {
@@ -158,12 +157,11 @@ main {
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__item {
-    position: relative;
     width: 99%;
     height: 85px;
+    border: 1px solid black;
     border-radius: 18px;
     margin: 20px 2px 2px 2px;
-    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
   }
@@ -172,15 +170,12 @@ main {
 //Ceci est le block ITEMS qui indique le nom du plat (titre h3)/sa description/son prix (li)
 .EPDTitreH2EtItem__item {
   .item__h3DescrpPrix {
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: 5;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid black;
     border-radius: 18px;
     background-color: #ffffff;
     transition: width 2s;
@@ -189,42 +184,28 @@ main {
       width: 70%;
     }
   }
+}
 
-  .item__anim {
-    position: absolute;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    background-color: #99e2d0;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-
-    @media (min-width: 769px) {
-      width: 70%;
-    }
-  }
-
-  .fa-regular {
-    width: 100%;
-    background-color: #99e2d0;
-    color: #ffffff;
-    font-size: 32px;
-    border-radius: 18px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+.EPDTitreH2EtItem__item::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  border: 1px solid black;
+  border-radius: 0 18px 18px 0;
+  width: 0%;
+  opacity: 0;
+  height: 100%;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $tertiaire;
 }
 
 //ANIMATION APPARITION
 .item__h3DescrpPrix:hover {
   cursor: pointer;
   width: 80%;
-}
-
-.item__h3DescrpPrix:hover + {
-  transform: translateX(150px);
 }
 
 //ANIMATION APPARITION
