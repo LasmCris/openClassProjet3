@@ -9,20 +9,28 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+      }
   }
 }
 
 footer {
   .footer__item {
     display: flex;
-    margin-bottom: 15px;
     margin-left: 10px;
+
+    @media (min-width: 768px) {
+        margin-left: 30px;
+      }
   }
 }
 
 footer {
   .footer__item--mrgnBot {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 43%;
     display: flex;
     align-items: center;
@@ -35,7 +43,18 @@ footer {
   .footer__logo {
     width: 65%;
     filter: invert(100);
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
   }
+}
+
+.fitem__paragraphe {
+  @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
 }
 
 .footer__item {
