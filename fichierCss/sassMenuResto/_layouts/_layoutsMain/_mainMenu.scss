@@ -4,13 +4,21 @@ main {
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
+  align-items: center;
 
-    .main__photo {
-      width: 100%;
-      object-fit: cover;
-}
-}
+  @media (min-width: 769px) {
+    background-color: #fff;
+  }
 
+  .main__photo {
+    width: 100%;
+    object-fit: cover;
+
+    @media (min-width: 769px) {
+      height: 400px;
+    }
+  }
+}
 
 //Ceci est le block SECTION
 main {
@@ -22,6 +30,10 @@ main {
     flex-direction: column;
     position: relative;
     bottom: 55px;
+
+    @media (min-width: 769px) {
+      width: 85%;
+    }
   }
 }
 
@@ -31,6 +43,10 @@ main {
     width: 100%;
     display: flex;
     margin: 40px 2px 2px 2px;
+
+    @media (min-width: 769px) {
+      justify-content: center;
+    }
   }
 }
 
@@ -38,8 +54,13 @@ main {
   .detailResto__titreH1 {
     width: 85%;
     margin: 5px 2px 2px 2px;
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
     font-size: 50px;
+
+    @media (min-width: 769px) {
+      width: auto;
+      margin-right: 26px;
+    }
   }
 }
 
@@ -51,6 +72,10 @@ main {
     align-items: center;
     margin: 5px 2px 2px 2px;
     font-size: 40px;
+
+    @media (min-width: 769px) {
+      width: auto;
+    }
   }
 }
 
@@ -88,7 +113,7 @@ main {
 
   .btnCmd {
     width: 44%;
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-image: linear-gradient(to top, #9356dc, #ff79da);
     border-radius: 137px;
     padding: 15px;
     font-size: 18px;
@@ -100,23 +125,28 @@ main {
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__titreH2EtDivBordure {
     width: 99%;
+
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
-
 
 //Ceci est le block TITREH2-DIVBORDURE
 .EPDTitreH2EtItem__titreH2EtDivBordure {
   .titreH2EtDivBordure__h2 {
     margin-bottom: 5px;
-    transition: background-color 3s ;
+    transition: background-color 3s;
     font-weight: 100;
   }
+  
 }
 
 .titreH2EtDivBordure__h2:hover {
   background-color: #ff79da;
 }
-
 
 .EPDTitreH2EtItem__titreH2EtDivBordure {
   .titreH2EtDivBordure__divBordure {
@@ -125,8 +155,6 @@ main {
     border: 1px solid #35bacb;
   }
 }
-  
-
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__item {
@@ -141,15 +169,12 @@ main {
   }
 }
 
-
-
-
 //Ceci est le block ITEMS qui indique le nom du plat (titre h3)/sa description/son prix (li)
 .EPDTitreH2EtItem__item {
   .item__h3DescrpPrix {
     position: absolute;
-      right: 0;
-      left: 0;
+    right: 0;
+    left: 0;
     z-index: 5;
     width: 100%;
     height: 100%;
@@ -158,7 +183,11 @@ main {
     justify-content: center;
     border-radius: 18px;
     background-color: #ffffff;
-    transition: width 2s ;
+    transition: width 2s;
+
+    @media (min-width: 769px) {
+      width: 70%;
+    }
   }
 
   .item__anim {
@@ -166,15 +195,19 @@ main {
     z-index: 4;
     width: 100%;
     height: 100%;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     border-radius: 18px;
     display: flex;
     align-items: center;
+
+    @media (min-width: 769px) {
+      width: 70%;
+    }
   }
 
   .fa-regular {
     width: 100%;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     color: #ffffff;
     font-size: 32px;
     border-radius: 18px;
@@ -184,29 +217,15 @@ main {
   }
 }
 
-
-
-
 //ANIMATION APPARITION
 .item__h3DescrpPrix:hover {
   cursor: pointer;
   width: 80%;
 }
 
-.item__h3DescrpPrix:hover +  {
+.item__h3DescrpPrix:hover + {
   transform: translateX(150px);
-  }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 //ANIMATION APPARITION
 .animApparition {
@@ -266,19 +285,6 @@ main {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .item__h3DescrpPrix {
   .h3DescrpPrix__h3 {
     margin: 2px 0 7px 15px;
@@ -292,7 +298,6 @@ main {
     justify-content: space-between;
   }
 }
-
 
 .h3DescrpPrix__descrpPrix {
   .descrpPrix__descrp {
