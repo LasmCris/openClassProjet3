@@ -159,11 +159,14 @@ main {
   .EPDTitreH2EtItem__item {
     width: 99%;
     height: 85px;
-    border: 1px solid black;
     border-radius: 18px;
     margin: 20px 2px 2px 2px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: 769px) {
+      justify-content: center;
+    }
   }
 }
 
@@ -175,10 +178,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
     border-radius: 18px;
     background-color: #ffffff;
-    transition: width 2s;
+    transition: border-radius 2s;
 
     @media (min-width: 769px) {
       width: 70%;
@@ -189,10 +191,12 @@ main {
 .EPDTitreH2EtItem__item::after {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
-  border: 1px solid black;
   border-radius: 0 18px 18px 0;
   width: 0%;
   opacity: 0;
+  transform-origin: 100% 50%;
+  transform: rotateZ('0deg');
+  padding-right: 0px;
   height: 100%;
   font-size: 30px;
   color: #fff;
@@ -200,13 +204,32 @@ main {
   justify-content: flex-end;
   align-items: center;
   background-color: $tertiaire;
+
+  transition: width 2s ease,
+              opacity 2s ease,
+              transform 2s ease,
+              padding-right 2s ease;
 }
 
-//ANIMATION APPARITION
-.item__h3DescrpPrix:hover {
+//etat finale speudo element
+.EPDTitreH2EtItem__item:hover::after {
   cursor: pointer;
-  width: 80%;
+  width: 10%;
+  padding-right: 110px;
+  opacity: 1;
+  transform: rotateZ('90deg');
 }
+
+//etat finale bordure de item__h3DescrpPrix
+.item__h3DescrpPrix:hover {
+  border-radius: 18px 0 0 18px;
+}
+
+//ANIMATION APPARITION 
+
+
+
+
 
 //ANIMATION APPARITION
 .animApparition {

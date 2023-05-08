@@ -181,11 +181,15 @@ main .main__detailResto {
 .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
   width: 99%;
   height: 85px;
-  border: 1px solid black;
   border-radius: 18px;
   margin: 20px 2px 2px 2px;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 769px) {
+  .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
+    justify-content: center;
+  }
 }
 
 .EPDTitreH2EtItem__item .item__h3DescrpPrix {
@@ -194,10 +198,9 @@ main .main__detailResto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
   border-radius: 18px;
   background-color: #ffffff;
-  transition: width 2s;
+  transition: border-radius 2s;
 }
 @media (min-width: 769px) {
   .EPDTitreH2EtItem__item .item__h3DescrpPrix {
@@ -208,10 +211,12 @@ main .main__detailResto {
 .EPDTitreH2EtItem__item::after {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
-  border: 1px solid black;
   border-radius: 0 18px 18px 0;
   width: 0%;
   opacity: 0;
+  transform-origin: 100% 50%;
+  transform: rotateZ("0deg");
+  padding-right: 0px;
   height: 100%;
   font-size: 30px;
   color: #fff;
@@ -219,11 +224,19 @@ main .main__detailResto {
   justify-content: flex-end;
   align-items: center;
   background-color: #99E2D0;
+  transition: width 2s ease, opacity 2s ease, transform 2s ease, padding-right 2s ease;
+}
+
+.EPDTitreH2EtItem__item:hover::after {
+  cursor: pointer;
+  width: 10%;
+  padding-right: 110px;
+  opacity: 1;
+  transform: rotateZ("90deg");
 }
 
 .item__h3DescrpPrix:hover {
-  cursor: pointer;
-  width: 80%;
+  border-radius: 18px 0 0 18px;
 }
 
 .animApparition {
