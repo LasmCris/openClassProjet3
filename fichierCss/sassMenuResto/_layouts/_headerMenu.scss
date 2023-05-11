@@ -5,11 +5,19 @@ header {
   display: flex;
   align-items: center;
 
+
+  div {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .header__nav {
+    width: 8%;
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 20%;
   }
 }
 
@@ -21,12 +29,11 @@ header {
 }
 
 
-header {
+div {
   .header__logo {
-    width: 47%;
-    height: 90%;
+    height: 38px;
     display: flex;
     align-items: center;
-    margin: 5px 0 5px 50px;
+    margin: 5px 0px;
   }
 }

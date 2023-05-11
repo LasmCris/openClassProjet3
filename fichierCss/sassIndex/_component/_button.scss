@@ -1,0 +1,24 @@
+.sousHeader {
+  .sousHeader__contentBtn {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 50px 0;
+  }
+}
+
+.sousHeader {
+  .sousHeader__btnExplorer {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    border-radius: 137px;
+    padding: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    transition: background-image 4s ease;
+  }
+
+  .sousHeader__btnExplorer:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #9d66e0, #ff89de);
+  }
+}

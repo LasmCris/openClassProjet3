@@ -51,14 +51,22 @@ footer {
   }
 }
 
-.fitem__paragraphe {
+.fitem__liens {
   @media (min-width: 769px) {
     font-size: 14px;
   }
 }
 
 .footer__item {
+  a {
+    display: flex;
+    width: 100%;
+    color: white;
+  }
+
   i {
     margin-right: 10px;
   }
 }
+
+

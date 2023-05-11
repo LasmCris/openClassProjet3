@@ -92,13 +92,25 @@ main {
   .listeEPDbtn {
     width: 99%;
     margin: 45px 2px 2px 2px;
+    border: 1px solid black;
+    padding: 2px;
+
   }
 }
 
 //Ceci est le block TITREH2-ET-ITEMS (li)
 .listeEPDbtn {
   .EPDTitreH2EtItem {
-    width: 99%;
+    width: 100%;
+    border: 1px solid black;
+    padding: 2px;
+
+    @media (min-width: 769px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 }
 
@@ -125,7 +137,6 @@ main {
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__titreH2EtDivBordure {
     width: 99%;
-
     @media (min-width: 769px) {
       display: flex;
       flex-direction: column;
@@ -159,13 +170,16 @@ main {
   .EPDTitreH2EtItem__item {
     width: 99%;
     height: 85px;
-    border-radius: 18px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 18px 0 0 18px;
     margin: 20px 2px 2px 2px;
     display: flex;
     justify-content: space-between;
 
     @media (min-width: 769px) {
       justify-content: center;
+      width: 75%;
     }
   }
 }
@@ -173,59 +187,52 @@ main {
 //Ceci est le block ITEMS qui indique le nom du plat (titre h3)/sa description/son prix (li)
 .EPDTitreH2EtItem__item {
   .item__h3DescrpPrix {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    border: 1px solid black;
+    border-radius: 18px 0 0 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 18px;
     background-color: #ffffff;
-    transition: border-radius 2s;
+    text-overflow: ellipsis;
+  }
 
-    @media (min-width: 769px) {
-      width: 70%;
-    }
+  .item__boxAnim {
+    width: 10%;
+    height: 100%;
+    background-color: $tertiaire;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
-.EPDTitreH2EtItem__item::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f058";
-  border-radius: 0 18px 18px 0;
-  width: 0%;
-  opacity: 0;
-  transform-origin: 100% 50%;
-  transform: rotateZ('0deg');
-  padding-right: 0px;
-  height: 100%;
-  font-size: 30px;
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: $tertiaire;
+.item__boxAnim {
+  .fa-sharp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    font-size: larger;
+    font-weight: 900;
+    color: $tertiaire;
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 50%;
+    margin-right: 2px;
+    transform-origin: 0 12px;
+    transform: rotate('0.5turn');
+    position: relative;
 
-  transition: width 2s ease,
-              opacity 2s ease,
-              transform 2s ease,
-              padding-right 2s ease;
+  }
 }
 
-//etat finale speudo element
-.EPDTitreH2EtItem__item:hover::after {
-  cursor: pointer;
-  width: 10%;
-  padding-right: 110px;
-  opacity: 1;
-  transform: rotateZ('90deg');
-}
+//ANNIMATION LATTERALE
+.animLaterale
 
-//etat finale bordure de item__h3DescrpPrix
-.item__h3DescrpPrix:hover {
-  border-radius: 18px 0 0 18px;
-}
-
-//ANIMATION APPARITION 
 
 
 

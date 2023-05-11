@@ -23,11 +23,17 @@ header {
   display: flex;
   align-items: center;
 }
+header div {
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .header__nav {
+  width: 8%;
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: 20%;
 }
 
 .header__nav .fa-solid {
@@ -35,12 +41,11 @@ header .header__nav {
   margin-left: 25px;
 }
 
-header .header__logo {
-  width: 47%;
-  height: 90%;
+div .header__logo {
+  height: 38px;
   display: flex;
   align-items: center;
-  margin: 5px 0 5px 50px;
+  margin: 5px 0px;
 }
 
 main {
@@ -128,10 +133,21 @@ main .main__detailResto {
 .detailResto__listeEPDbtn .listeEPDbtn {
   width: 99%;
   margin: 45px 2px 2px 2px;
+  border: 1px solid black;
+  padding: 2px;
 }
 
 .listeEPDbtn .EPDTitreH2EtItem {
-  width: 99%;
+  width: 100%;
+  border: 1px solid black;
+  padding: 2px;
+}
+@media (min-width: 769px) {
+  .listeEPDbtn .EPDTitreH2EtItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .listeEPDbtn--bouton {
@@ -181,7 +197,9 @@ main .main__detailResto {
 .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
   width: 99%;
   height: 85px;
-  border-radius: 18px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 18px 0 0 18px;
   margin: 20px 2px 2px 2px;
   display: flex;
   justify-content: space-between;
@@ -189,57 +207,50 @@ main .main__detailResto {
 @media (min-width: 769px) {
   .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
     justify-content: center;
+    width: 75%;
   }
 }
 
 .EPDTitreH2EtItem__item .item__h3DescrpPrix {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  border: 1px solid black;
+  border-radius: 18px 0 0 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 18px;
   background-color: #ffffff;
-  transition: border-radius 2s;
+  text-overflow: ellipsis;
 }
-@media (min-width: 769px) {
-  .EPDTitreH2EtItem__item .item__h3DescrpPrix {
-    width: 70%;
-  }
-}
-
-.EPDTitreH2EtItem__item::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f058";
-  border-radius: 0 18px 18px 0;
-  width: 0%;
-  opacity: 0;
-  transform-origin: 100% 50%;
-  transform: rotateZ("0deg");
-  padding-right: 0px;
+.EPDTitreH2EtItem__item .item__boxAnim {
+  width: 10%;
   height: 100%;
-  font-size: 30px;
-  color: #fff;
+  background-color: #99E2D0;
+  border: 1px solid black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #99E2D0;
-  transition: width 2s ease, opacity 2s ease, transform 2s ease, padding-right 2s ease;
 }
 
-.EPDTitreH2EtItem__item:hover::after {
-  cursor: pointer;
-  width: 10%;
-  padding-right: 110px;
-  opacity: 1;
-  transform: rotateZ("90deg");
+.item__boxAnim .fa-sharp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  font-size: larger;
+  font-weight: 900;
+  color: #99E2D0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 2px;
+  transform-origin: 0 12px;
+  transform: rotate("0.5turn");
+  position: relative;
 }
 
-.item__h3DescrpPrix:hover {
-  border-radius: 18px 0 0 18px;
-}
-
-.animApparition {
+.animLaterale .animApparition {
   animation: apparition 2s 1s ease forwards;
   opacity: 0;
 }
@@ -366,11 +377,16 @@ footer .footer__logo {
 }
 
 @media (min-width: 769px) {
-  .fitem__paragraphe {
+  .fitem__liens {
     font-size: 14px;
   }
 }
 
+.footer__item a {
+  display: flex;
+  width: 100%;
+  color: white;
+}
 .footer__item i {
   margin-right: 10px;
 }/*# sourceMappingURL=menuResto.css.map */
