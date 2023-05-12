@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -579,6 +580,16 @@ main .main__detailResto {
   border-radius: 0 18px 18px 0;
 }
 
+.item__boxAnim {
+  /* Ceci est l'iconne CHECK qui est scencé subir une rotation, mais il ne ne bouge pas malgrès 
+    * l'application de la propriété "transform: rotate()" dans son état initial et dans son 
+    * état final
+  */
+  /* je teste volontairement un hover seulement sur l'icone
+  * pour voir, je sais que pour l'animation finale 
+  * ca ne sera pas le cas
+    */
+}
 .item__boxAnim .fa-sharp {
   display: flex;
   justify-content: center;
@@ -592,9 +603,11 @@ main .main__detailResto {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
   margin-right: 2px;
-  transform-origin: 0 12px;
-  transform: rotate("0.5turn");
-  position: relative;
+  transform: rotate("0deg");
+}
+.item__boxAnim .fa-sharp:hover {
+  cursor: pointer;
+  transform: rotate("45deg");
 }
 
 .animApparition {
