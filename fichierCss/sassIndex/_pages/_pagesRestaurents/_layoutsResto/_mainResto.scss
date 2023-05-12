@@ -56,7 +56,7 @@ main {
     margin: 5px 2px 2px 2px;
     font-family: "Shrikhand", cursive;
     font-size: 50px;
-
+    
     @media (min-width: 769px) {
       width: auto;
       margin-right: 26px;
@@ -64,20 +64,6 @@ main {
   }
 }
 
-.detailResto__titreH1Like {
-  .fa-regular {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 2px 2px 2px;
-    font-size: 40px;
-
-    @media (min-width: 769px) {
-      width: auto;
-    }
-  }
-}
 
 //Ceci est le block DETAIL-RESTO-LISTE-EPDBTN (ul)
 .detailResto__listeEPDbtn {
@@ -116,27 +102,11 @@ main {
 
 //Ceci une modification du block TITREH2-ET-ITEMS
 //qui contient un bouton au lieu d'un titreH2 et des items(li)
-.listeEPDbtn--bouton {
-  width: 99%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .btnCmd {
-    width: 44%;
-    background-image: linear-gradient(to top, #9356dc, #ff79da);
-    border-radius: 137px;
-    padding: 15px;
-    font-size: 18px;
-    color: #ffffff;
-    border: none;
-  }
-}
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__titreH2EtDivBordure {
     width: 99%;
+    border: 1px solid black;
     @media (min-width: 769px) {
       display: flex;
       flex-direction: column;
@@ -172,7 +142,7 @@ main {
     height: 85px;
     padding: 3px;
     border: 1px solid black;
-    border-radius: 18px 0 0 18px;
+    border-radius: 18px;
     margin: 20px 2px 2px 2px;
     display: flex;
     justify-content: space-between;
@@ -206,6 +176,7 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-radius: 0 18px 18px 0;
   }
 }
 
@@ -231,10 +202,6 @@ main {
 }
 
 //ANNIMATION LATTERALE
-.animLaterale
-
-
-
 
 
 

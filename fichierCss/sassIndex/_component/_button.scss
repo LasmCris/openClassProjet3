@@ -6,9 +6,17 @@
   }
 }
 
-.sousHeader {
-  .sousHeader__btnExplorer {
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+.listeEPDbtn--bouton {
+  width: 99%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCmd {
+    background-image: linear-gradient(to top, #9356dc, #ff79da);
+    width: 200px;
     border-radius: 137px;
     padding: 15px;
     font-size: 15px;
@@ -17,8 +25,11 @@
     transition: background-image 4s ease;
   }
 
-  .sousHeader__btnExplorer:hover {
+  .btnCmd:hover {
     cursor: pointer;
     background-image: linear-gradient(to top, #9d66e0, #ff89de);
-  }
+}
+
+.btnCmd:visited {
+  color: white;
 }

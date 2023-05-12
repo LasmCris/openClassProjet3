@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu "A la francaise</title>
-    <link rel="stylesheet" href="fichierCss/sassMenuResto/menuResto.css" />
+    <link rel="stylesheet" href="fichierCss/sassIndex/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,13 +18,13 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="header--resto">
       <a href="index.html" class="header__nav">
         <i class="fa-solid fa-angle-left"></i>
       </a>
-      <div>
+      <div class="header__logoBox">
         <img
-          class="header__logo"
+          class="logo--header"
           src="Maquette_Ohmyfood/images/logo/ohmyfood.png"
           alt="logo du site"
         />
@@ -40,7 +40,9 @@
       <section class="main__detailResto">
         <div class="detailResto__titreH1Like">
           <h1 class="detailResto__titreH1">A la française</h1>
-          <i class="fa-regular fa-heart"></i>
+          <div class="box__coeur">
+            <i class="fa-solid fa-heart"></i>
+          </div>
         </div>
 
         <ul class="detailResto__listeEPDbtn">
