@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +76,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 35px;
+  color: white;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  transition: color 1s ease;
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+  color: #FF79DA;
 }
 
 .header--index {
@@ -496,14 +504,10 @@ main .main__detailResto {
 .detailResto__listeEPDbtn .listeEPDbtn {
   width: 99%;
   margin: 45px 2px 2px 2px;
-  border: 1px solid black;
-  padding: 2px;
 }
 
 .listeEPDbtn .EPDTitreH2EtItem {
   width: 100%;
-  border: 1px solid black;
-  padding: 2px;
 }
 @media (min-width: 769px) {
   .listeEPDbtn .EPDTitreH2EtItem {
@@ -515,7 +519,6 @@ main .main__detailResto {
 
 .EPDTitreH2EtItem .EPDTitreH2EtItem__titreH2EtDivBordure {
   width: 99%;
-  border: 1px solid black;
 }
 @media (min-width: 769px) {
   .EPDTitreH2EtItem .EPDTitreH2EtItem__titreH2EtDivBordure {
@@ -544,8 +547,6 @@ main .main__detailResto {
 .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
   width: 99%;
   height: 85px;
-  padding: 3px;
-  border: 1px solid black;
   border-radius: 18px;
   margin: 20px 2px 2px 2px;
   display: flex;
@@ -559,37 +560,28 @@ main .main__detailResto {
 }
 
 .EPDTitreH2EtItem__item .item__h3DescrpPrix {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  border: 1px solid black;
-  border-radius: 18px 0 0 18px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
   text-overflow: ellipsis;
+  transition: border-radius 1s 0.2s ease-out;
 }
 .EPDTitreH2EtItem__item .item__boxAnim {
-  width: 10%;
+  width: 0%;
+  opacity: 0;
   height: 100%;
   background-color: #99E2D0;
-  border: 1px solid black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-radius: 0 18px 18px 0;
+  transition: width 1s 0.2s ease-out, opacity 1s 0.2s ease-out;
 }
 
-.item__boxAnim {
-  /* Ceci est l'iconne CHECK qui est scencé subir une rotation, mais il ne ne bouge pas malgrès 
-    * l'application de la propriété "transform: rotate()" dans son état initial et dans son 
-    * état final
-  */
-  /* je teste volontairement un hover seulement sur l'icone
-  * pour voir, je sais que pour l'animation finale 
-  * ca ne sera pas le cas
-    */
-}
 .item__boxAnim .fa-sharp {
   display: flex;
   justify-content: center;
@@ -600,14 +592,26 @@ main .main__detailResto {
   font-size: larger;
   font-weight: 900;
   color: #99E2D0;
-  border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
   margin-right: 2px;
-  transform: rotate("0deg");
+  transform: rotate(0deg);
+  animation-name: rotationC;
+  transition: margin-right 1s 0.2s ease-out, transform 1s 0.2s ease-out;
 }
-.item__boxAnim .fa-sharp:hover {
+
+.EPDTitreH2EtItem__item:hover {
   cursor: pointer;
-  transform: rotate("45deg");
+}
+.EPDTitreH2EtItem__item:hover .item__boxAnim {
+  width: 20%;
+  opacity: 1;
+}
+.EPDTitreH2EtItem__item:hover .fa-sharp {
+  margin-right: 50%;
+  transform: rotate(360deg);
+}
+.EPDTitreH2EtItem__item:hover .item__h3DescrpPrix {
+  border-radius: 18px 0 0 18px;
 }
 
 .animApparition {
