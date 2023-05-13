@@ -56,14 +56,13 @@ main {
     margin: 5px 2px 2px 2px;
     font-family: "Shrikhand", cursive;
     font-size: 50px;
-    
+
     @media (min-width: 769px) {
       width: auto;
       margin-right: 26px;
     }
   }
 }
-
 
 //Ceci est le block DETAIL-RESTO-LISTE-EPDBTN (ul)
 .detailResto__listeEPDbtn {
@@ -91,7 +90,6 @@ main {
       flex-direction: column;
       align-items: center;
     }
-
   }
 }
 
@@ -132,7 +130,7 @@ main {
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__item {
-    width: 99%;
+    width: 100%;
     height: 85px;
     border-radius: 18px;
     margin: 20px 2px 2px 2px;
@@ -148,32 +146,69 @@ main {
 
 //Ceci est le block ITEMS qui indique le nom du plat (titre h3)/sa description/son prix (li)
 .EPDTitreH2EtItem__item {
-  .item__h3DescrpPrix {
-    width: 100%;
+  .item__h3Descrp {
+    width: 80%;
     height: 100%;
-      border-radius: 18px;
+    border-radius: 18px 0 0 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    transition: border-radius 1s .2s ease-out;
+  }
+
+  .item__prix {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    border-radius: 0 18px 18px 0;
+    transition: border-radius 1s 0.2s ease-out;
   }
 
   .item__boxAnim {
-      width: 0%;
-      opacity: 0;
+    width: 0%;
+    opacity: 0;
     height: 100%;
     background-color: $tertiaire;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border-radius: 0 18px 18px 0;
-    transition: width 1s .2s ease-out,
-                opacity 1s .2s ease-out;
+    transition: width 1s 0.2s ease-out, opacity 1s 0.2s ease-out;
   }
 }
 
+.item__h3Descrp {
+  .h3Descrp__h3 {
+    margin: 2px 0 7px 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .h3Descrp__descrp {
+    margin: 2px 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
+
+.item__prix {
+  .prix {
+    margin: 0 13px 19px 0;
+  }
+}
 
 .item__boxAnim {
   .fa-sharp {
@@ -187,11 +222,10 @@ main {
     font-weight: 900;
     color: $tertiaire;
     border-radius: 50%;
-      margin-right: 2px;
-      transform: rotate(0deg);
+    margin-right: 2px;
+    transform: rotate(0deg);
     animation-name: rotationC;
-    transition: margin-right 1s .2s ease-out,
-                transform 1s .2s ease-out;
+    transition: margin-right 1s 0.2s ease-out, transform 1s 0.2s ease-out;
   }
 }
 
@@ -209,11 +243,10 @@ main {
     transform: rotate(360deg);
   }
 
-  .item__h3DescrpPrix {
-    border-radius: 18px 0 0 18px;
+  .item__prix {
+    border-radius: 0px;
   }
 }
-
 
 //ANIMATION APPARITION
 .animApparition {
@@ -270,33 +303,5 @@ main {
   100% {
     opacity: 1;
     transform: none;
-  }
-}
-
-.item__h3DescrpPrix {
-  .h3DescrpPrix__h3 {
-    margin: 2px 0 7px 15px;
-    width: 100%;
-  }
-
-  .h3DescrpPrix__descrpPrix {
-    margin: 2px 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.h3DescrpPrix__descrpPrix {
-  .descrpPrix__descrp {
-    width: 80%;
-    font-weight: 100;
-  }
-
-  .descrpPrix__prix {
-    width: 20%;
-    margin-right: 35px;
-    display: flex;
-    justify-content: flex-end;
   }
 }
