@@ -77,6 +77,7 @@ body {
   align-items: center;
   font-size: 35px;
   color: white;
+  margin-right: 10px;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black;
   transition: color 1s ease;
@@ -320,7 +321,7 @@ form input {
 }
 .restaurent .restaurent__titreH2 {
   margin-top: 47px;
-  margin-left: 75px;
+  margin-left: 87px;
 }
 
 .restaurent .restaurent__grpPhotos {
@@ -498,7 +499,7 @@ main .main__detailResto {
 @media (min-width: 769px) {
   .detailResto__titreH1Like .detailResto__titreH1 {
     width: auto;
-    margin-right: 26px;
+    margin-right: 16px;
   }
 }
 
@@ -644,7 +645,7 @@ main .main__detailResto {
 }
 .EPDTitreH2EtItem__item:hover .fa-sharp {
   margin-right: 50%;
-  transform: rotate(360deg);
+  transform: rotate(350deg);
 }
 .EPDTitreH2EtItem__item:hover .item__prix {
   border-radius: 0px;
