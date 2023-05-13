@@ -320,7 +320,7 @@ form input {
 }
 .restaurent .restaurent__titreH2 {
   margin-top: 47px;
-  margin-left: 23px;
+  margin-left: 75px;
 }
 
 .restaurent .restaurent__grpPhotos {
@@ -407,6 +407,12 @@ form input {
   font-weight: 100;
 }
 
+@media (min-width: 769px) {
+  .box__coeur--Resto {
+    width: 10%;
+  }
+}
+
 .header--resto {
   width: 100%;
   height: 73px;
@@ -485,7 +491,7 @@ main .main__detailResto {
 
 .detailResto__titreH1Like .detailResto__titreH1 {
   width: 85%;
-  margin: 5px 2px 2px 2px;
+  margin: 0px 2px 2px 35px;
   font-family: "Shrikhand", cursive;
   font-size: 50px;
 }
