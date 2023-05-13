@@ -51,6 +51,7 @@ body {
 .btnCmd:hover {
   cursor: pointer;
   background-image: linear-gradient(to top, #9d66e0, #ff89de);
+  box-shadow: 2px 2px 10px rgb(182, 182, 182);
 }
 
 .btnCmd:visited {
