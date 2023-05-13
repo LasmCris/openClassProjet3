@@ -409,6 +409,15 @@ form input {
   font-weight: 100;
 }
 
+.logo--headerResto {
+  height: 40px;
+}
+@media (min-width: 1024px) {
+  .logo--headerResto {
+    margin-left: 33%;
+  }
+}
+
 @media (min-width: 769px) {
   .box__coeur--Resto {
     width: 10%;
@@ -427,6 +436,11 @@ form input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .header__logoBox {
+    justify-content: flex-start;
+  }
 }
 
 .header__nav {
