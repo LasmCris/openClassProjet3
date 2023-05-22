@@ -354,7 +354,7 @@ form input {
 }
 .fonctionnement .fonctionnement__items:hover {
   cursor: pointer;
-  background-color: #fdecf8;
+  background-color: #ece8f1;
 }
 
 .fonctionnement__items .items__nbr {
