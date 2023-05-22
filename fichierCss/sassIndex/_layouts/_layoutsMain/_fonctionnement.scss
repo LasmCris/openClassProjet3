@@ -48,6 +48,11 @@
       height: 68px;
     }
   }
+
+  .fonctionnement__items:hover {
+    cursor: pointer;
+    background-color: #fdecf8;
+  }
 }
 
 .fonctionnement__items {
