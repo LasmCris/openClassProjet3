@@ -19,6 +19,7 @@
   .fonctionnement__grpItems {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 50px 2px 2px 2px;
 
     @media (min-width: 769px) {

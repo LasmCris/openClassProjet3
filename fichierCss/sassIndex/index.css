@@ -12,15 +12,106 @@ a:visited {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.page {
   min-width: 238px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (min-width: 769px) {
-  body {
+  .page {
     max-width: auto;
   }
+}
+
+.loaderIndex {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 238px;
+  width: 100%;
+  height: 100%;
+  z-index: 9900;
+  background: #403e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disparitionLoader 3s 10.8s forwards;
+}
+
+.lettre {
+  color: #9356DC;
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  animation: flash 1.2s linear;
+  animation-iteration-count: 9;
+}
+@media (min-width: 769px) {
+  .lettre {
+    font-size: 80px;
+    letter-spacing: 30px;
+  }
+}
+
+@keyframes disparitionLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    transform: translateY(0);
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    transform: translateY(10px);
+  }
+}
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
 }
 
 .sousHeader .sousHeader__contentBtn {
@@ -232,6 +323,7 @@ form input {
 .fonctionnement .fonctionnement__grpItems {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 50px 2px 2px 2px;
 }
 @media (min-width: 769px) {
@@ -322,7 +414,12 @@ form input {
 }
 .restaurent .restaurent__titreH2 {
   margin-top: 47px;
-  margin-left: 87px;
+  margin-left: 30px;
+}
+@media (min-width: 769px) {
+  .restaurent .restaurent__titreH2 {
+    margin-left: 87px;
+  }
 }
 
 .restaurent .restaurent__grpPhotos {
@@ -447,6 +544,7 @@ form input {
   width: 8%;
   text-decoration: none;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -531,6 +629,9 @@ main .main__detailResto {
 
 .listeEPDbtn .EPDTitreH2EtItem {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 769px) {
   .listeEPDbtn .EPDTitreH2EtItem {
@@ -568,8 +669,8 @@ main .main__detailResto {
 }
 
 .EPDTitreH2EtItem .EPDTitreH2EtItem__item {
-  width: 100%;
-  height: 85px;
+  width: 95%;
+  height: 79px;
   border-radius: 18px;
   margin: 20px 2px 2px 2px;
   display: flex;
@@ -586,6 +687,7 @@ main .main__detailResto {
   width: 80%;
   height: 100%;
   border-radius: 18px 0 0 18px;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -617,14 +719,13 @@ main .main__detailResto {
 }
 
 .item__h3Descrp .h3Descrp__h3 {
-  margin: 2px 0 7px 15px;
+  margin-bottom: 11px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .item__h3Descrp .h3Descrp__descrp {
-  margin: 2px 15px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -668,48 +769,48 @@ main .main__detailResto {
 }
 
 .animApparition {
-  animation: apparition 2s 1s ease forwards;
+  animation: apparition 2s 13s ease forwards;
   opacity: 0;
 }
 
 .item1 {
-  animation-delay: 1s;
+  animation-delay: 13s;
 }
 
 .item2 {
-  animation-delay: 1.3s;
+  animation-delay: 13.3s;
 }
 
 .item3 {
-  animation-delay: 1.6s;
+  animation-delay: 13.6s;
 }
 
 .item4 {
-  animation-delay: 1.9s;
+  animation-delay: 13.9s;
 }
 
 .item5 {
-  animation-delay: 2.2s;
+  animation-delay: 14.2s;
 }
 
 .item6 {
-  animation-delay: 2.5s;
+  animation-delay: 14.5s;
 }
 
 .item7 {
-  animation-delay: 2.8s;
+  animation-delay: 14.8s;
 }
 
 .item8 {
-  animation-delay: 3.1s;
+  animation-delay: 15.1s;
 }
 
 .item9 {
-  animation-delay: 3.4s;
+  animation-delay: 15.4s;
 }
 
 .item10 {
-  animation-delay: 3.7s;
+  animation-delay: 15.7s;
 }
 
 @keyframes apparition {

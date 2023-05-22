@@ -20,7 +20,6 @@ main {
   }
 }
 
-//Ceci est le block SECTION
 main {
   .main__detailResto {
     width: 100%;
@@ -37,7 +36,6 @@ main {
   }
 }
 
-//Ceci est le block TITREh1LIKE
 .main__detailResto {
   .detailResto__titreH1Like {
     width: 100%;
@@ -65,26 +63,26 @@ main {
   }
 }
 
-//Ceci est le block DETAIL-RESTO-LISTE-EPDBTN (ul)
+
 .detailResto__listeEPDbtn {
   width: 99%;
   display: flex;
   flex-direction: column;
 
-  //Ceci est le block ENTRÉES/PLATS/DESSERTS/BTN (li)
-  //qui va contenir une autre ul qui va lister
-  //un titre H2 ENTREE/PLATS/DESSERTs suivit de
-  //chacuns des entrés/plats/desserts/btn
+
   .listeEPDbtn {
     width: 99%;
     margin: 45px 2px 2px 2px;
   }
 }
 
-//Ceci est le block TITREH2-ET-ITEMS (li)
 .listeEPDbtn {
   .EPDTitreH2EtItem {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
     @media (min-width: 769px) {
       display: flex;
@@ -93,9 +91,6 @@ main {
     }
   }
 }
-
-//Ceci une modification du block TITREH2-ET-ITEMS
-//qui contient un bouton au lieu d'un titreH2 et des items(li)
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__titreH2EtDivBordure {
@@ -108,7 +103,6 @@ main {
   }
 }
 
-//Ceci est le block TITREH2-DIVBORDURE
 .EPDTitreH2EtItem__titreH2EtDivBordure {
   .titreH2EtDivBordure__h2 {
     margin-bottom: 5px;
@@ -131,8 +125,8 @@ main {
 
 .EPDTitreH2EtItem {
   .EPDTitreH2EtItem__item {
-    width: 100%;
-    height: 85px;
+    width: 95%;
+    height: 79px;
     border-radius: 18px;
     margin: 20px 2px 2px 2px;
     display: flex;
@@ -145,12 +139,13 @@ main {
   }
 }
 
-//Ceci est le block ITEMS qui indique le nom du plat (titre h3)/sa description/son prix (li)
+
 .EPDTitreH2EtItem__item {
   .item__h3Descrp {
     width: 80%;
     height: 100%;
     border-radius: 18px 0 0 18px;
+    padding-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +181,7 @@ main {
 
 .item__h3Descrp {
   .h3Descrp__h3 {
-    margin: 2px 0 7px 15px;
+    margin-bottom: 11px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -194,16 +189,13 @@ main {
   }
 
   .h3Descrp__descrp {
-    margin: 2px 15px;
+    //margin: 2px 15px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 }
-
-
-
 
 .item__prix {
   .prix {
@@ -230,7 +222,7 @@ main {
   }
 }
 
-
+//ANIMATION CHECK
 .EPDTitreH2EtItem__item:hover {
   cursor: pointer;
 
@@ -251,48 +243,48 @@ main {
 
 //ANIMATION APPARITION
 .animApparition {
-  animation: apparition 2s 1s ease forwards;
+  animation: apparition 2s 13s ease forwards;
   opacity: 0;
 }
 
 .item1 {
-  animation-delay: 1s;
+  animation-delay: 13s;
 }
 
 .item2 {
-  animation-delay: 1.3s;
+  animation-delay: 13.3s;
 }
 
 .item3 {
-  animation-delay: 1.6s;
+  animation-delay: 13.6s;
 }
 
 .item4 {
-  animation-delay: 1.9s;
+  animation-delay: 13.9s;
 }
 
 .item5 {
-  animation-delay: 2.2s;
+  animation-delay: 14.2s;
 }
 
 .item6 {
-  animation-delay: 2.5s;
+  animation-delay: 14.5s;
 }
 
 .item7 {
-  animation-delay: 2.8s;
+  animation-delay: 14.8s;
 }
 
 .item8 {
-  animation-delay: 3.1s;
+  animation-delay: 15.1s;
 }
 
 .item9 {
-  animation-delay: 3.4s;
+  animation-delay: 15.4s;
 }
 
 .item10 {
-  animation-delay: 3.7s;
+  animation-delay: 15.7s;
 }
 
 @keyframes apparition {

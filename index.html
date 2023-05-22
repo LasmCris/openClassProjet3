@@ -17,166 +17,179 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  
   <body>
-    <header class="header--index">
-      <img
-        class="logo--header"
-        src="Maquette_Ohmyfood/images/logo/ohmyfood.png"
-        alt="logo ohmyfood"
-      />
-    </header>
-    <main class="main--index">
-      <section class="sousHeader">
-        <form action="">
-          <i class="fa-sharp fa-solid fa-location-dot"></i>
-          <input placeholder="Paris, Belleville" class="sousHeader__form" id="spot"></input>
-        </form>
-        <h1 class="sousHeader__titreH1">Réservez le menu qui vous convient</h1>
-        <p class="sousHeader__paragraphe">
-          Découvrez des restaurants d'exception, sélectionnés par nos soins.
-        </p>
-        <div class="sousHeader__contentBtn">
-          <a href="#restaurent" class="btnCmd">
-            Explorer nos restaurants
-          </a>
-        </div>
-      </section>
+    <div class="loaderIndex">
+      <span class="lettre">O</span>
+      <span class="lettre">H</span>
+      <span class="lettre">M</span>
+      <span class="lettre">Y</span>
+      <span class="lettre">F</span>
+      <span class="lettre">O</span>
+      <span class="lettre">O</span>
+      <span class="lettre">D</span>
+    </div>
+    <div class="page">
+      <header class="header--index">
+        <img
+          class="logo--header"
+          src="Maquette_Ohmyfood/images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
+      </header>
+      <main class="main--index">
+        <section class="sousHeader">
+          <form action="">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <input placeholder="Paris, Belleville" class="sousHeader__form" id="spot"></input>
+          </form>
+          <h1 class="sousHeader__titreH1">Réservez le menu qui vous convient</h1>
+          <p class="sousHeader__paragraphe">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+          <div class="sousHeader__contentBtn">
+            <a href="#restaurent" class="btnCmd">
+              Explorer nos restaurants
+            </a>
+          </div>
+        </section>
 
-      <ul class="fonctionnement">
-        <li class="fonctionnement__titreH2">
-          <h2>Fonctionnement</h2>
-        </li>
-        <div class="fonctionnement__grpItems">
-          <li class="fonctionnement__items">
-            <i class="items__nbr">1</i>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p class="items__paragraphe">Choisissez un restaurent</p>
+        <ul class="fonctionnement">
+          <li class="fonctionnement__titreH2">
+            <h2>Fonctionnement</h2>
           </li>
-          <li class="fonctionnement__items">
-            <i class="items__nbr">2</i>
-            <i class="fa-solid fa-list-ul"></i>
-            <p class="items__paragraphe">Composez votre menu</p>
+          <div class="fonctionnement__grpItems">
+            <li class="fonctionnement__items">
+              <i class="items__nbr">1</i>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <p class="items__paragraphe">Choisissez un restaurent</p>
+            </li>
+            <li class="fonctionnement__items">
+              <i class="items__nbr">2</i>
+              <i class="fa-solid fa-list-ul"></i>
+              <p class="items__paragraphe">Composez votre menu</p>
+            </li>
+            <li class="fonctionnement__items">
+              <i class="items__nbr">3</i>
+              <i class="fa-solid fa-house-chimney-window"></i>
+              <p class="items__paragraphe">Deguster au restaurent</p>
+            </li>
+          </div>
+        </ul>
+
+        <section class="restaurent" id="restaurent">
+          <h2 class="restaurent__titreH2">Restaurants</h2>
+          <div class="restaurent__grpPhotos">
+            <a href="menuLaPaletteDuGout.html" class="restaurent_liens">
+              <figure class="restaurent__figure">
+                <img
+                  class="restaurent__photos"
+                  src="Maquette_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt="Restaurant palette du gout"
+                />
+                <p class="restaurent__nouveau">Nouveau</p>
+                <figcaption class="restaurent__figcaption">
+                  <div class="restaurent__H3Quartier">
+                    <h3 class="restaurent__H3">La palette du goût</h3>
+                    <p class="restaurent__quartier">Ménilmontant</p>
+                  </div>
+                  <div class="box__coeur">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+            <a href="menuLaNoteEnchantée.html" class="restaurent_liens">
+              <figure class="restaurent__figure">
+                <img
+                  class="restaurent__photos"
+                  src="Maquette_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="Restaurant La note Enchantée"
+                />
+                <p class="restaurent__nouveau">Nouveau</p>
+                <figcaption class="restaurent__figcaption">
+                  <div class="restaurent__H3Quartier">
+                    <h3 class="restaurent__H3">La note enchantée</h3>
+                    <p class="restaurent__quartier">Charone</p>
+                  </div>
+                  <div class="box__coeur"> 
+                    <i class="fa-solid fa-heart"></i> 
+                  </div>                  
+                </figcaption>
+              </figure>
+            </a>
+            <a href="menuALaFrancaise.html" class="restaurent_liens">
+              <figure class="restaurent__figure">
+                <img
+                  class="restaurent__photos"
+                  src="Maquette_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="Restaurant A la francaise"
+                />
+                <figcaption class="restaurent__figcaption">
+                  <div class="restaurent__H3Quartier">
+                    <h3 class="restaurent__H3">A la francaise</h3>
+                    <p class="restaurent__quartier">Cité Rouge</p>
+                  </div>
+                  <div class="box__coeur"> 
+                    <i class="fa-solid fa-heart"></i> 
+                  </div>                  
+                </figcaption>
+              </figure>
+            </a>
+            <a href="menuLeDeliceDesSens.html" class="restaurent_liens">
+              <figure class="restaurent__figure">
+                <img
+                  class="restaurent__photos"
+                  src="Maquette_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Restaurent Le delice des sens"
+                />
+                <figcaption class="restaurent__figcaption">
+                  <div class="restaurent__H3Quartier">
+                    <h3 class="restaurent__H3">Le delice des sens</h3>
+                    <p class="restaurent__quartier">Folie-Méricourt</p>
+                  </div>
+                  <div class="box__coeur">
+                    <i class="fa-solid fa-heart"></i> 
+                  </div>                  
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul class="footer__box">
+          <li class="footer__item footer__item--mrgnBot">
+            <img
+              class="footer__logo"
+              src="Maquette_Ohmyfood/images/logo/ohmyfood.png"
+              alt="logo bas de page"
+            />
           </li>
-          <li class="fonctionnement__items">
-            <i class="items__nbr">3</i>
-            <i class="fa-solid fa-house-chimney-window"></i>
-            <p class="items__paragraphe">Deguster au restaurent</p>
+
+          <li class="footer__item">
+            <a href="#">
+              <i class="fa-solid fa-utensils"></i>
+              <p class="fitem__paragraphe">proposer un restaurent</p>
+            </a>
           </li>
-        </div>
-      </ul>
 
-      <section class="restaurent" id="restaurent">
-        <h2 class="restaurent__titreH2">Restaurents</h2>
-        <div class="restaurent__grpPhotos">
-          <a href="menuLaPaletteDuGout.html" class="restaurent_liens">
-            <figure class="restaurent__figure">
-              <img
-                class="restaurent__photos"
-                src="Maquette_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Restaurant palette du gout"
-              />
-              <p class="restaurent__nouveau">Nouveau</p>
-              <figcaption class="restaurent__figcaption">
-                <div class="restaurent__H3Quartier">
-                  <h3 class="restaurent__H3">La palette du goût</h3>
-                  <p class="restaurent__quartier">Ménilmontant</p>
-                </div>
-                <div class="box__coeur">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </figcaption>
-            </figure>
-          </a>
-          <a href="menuLaNoteEnchantée.html" class="restaurent_liens">
-            <figure class="restaurent__figure">
-              <img
-                class="restaurent__photos"
-                src="Maquette_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="Restaurant La note Enchantée"
-              />
-              <p class="restaurent__nouveau">Nouveau</p>
-              <figcaption class="restaurent__figcaption">
-                <div class="restaurent__H3Quartier">
-                  <h3 class="restaurent__H3">La note enchantée</h3>
-                  <p class="restaurent__quartier">Charone</p>
-                </div>
-                <div class="box__coeur"> 
-                  <i class="fa-solid fa-heart"></i> 
-                </div>                  
-              </figcaption>
-            </figure>
-          </a>
-          <a href="menuALaFrancaise.html" class="restaurent_liens">
-            <figure class="restaurent__figure">
-              <img
-                class="restaurent__photos"
-                src="Maquette_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="Restaurant A la francaise"
-              />
-              <figcaption class="restaurent__figcaption">
-                <div class="restaurent__H3Quartier">
-                  <h3 class="restaurent__H3">A la francaise</h3>
-                  <p class="restaurent__quartier">Cité Rouge</p>
-                </div>
-                <div class="box__coeur"> 
-                  <i class="fa-solid fa-heart"></i> 
-                </div>                  
-              </figcaption>
-            </figure>
-          </a>
-          <a href="menuLeDeliceDesSens.html" class="restaurent_liens">
-            <figure class="restaurent__figure">
-              <img
-                class="restaurent__photos"
-                src="Maquette_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Restaurent Le delice des sens"
-              />
-              <figcaption class="restaurent__figcaption">
-                <div class="restaurent__H3Quartier">
-                  <h3 class="restaurent__H3">Le delice des sens</h3>
-                  <p class="restaurent__quartier">Folie-Méricourt</p>
-                </div>
-                <div class="box__coeur">
-                  <i class="fa-solid fa-heart"></i> 
-                </div>                  
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <ul class="footer__box">
-        <li class="footer__item footer__item--mrgnBot">
-          <img
-            class="footer__logo"
-            src="Maquette_Ohmyfood/images/logo/ohmyfood.png"
-            alt="logo bas de page"
-          />
-        </li>
+          <li class="footer__item">
+            <a href="#">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <p class="fitem__paragraphe">Devenir partenaire</p>
+            </a>
+          </li>
 
-        <li class="footer__item">
-          <a href="#">
-            <i class="fa-solid fa-utensils"></i>
-            <p class="fitem__paragraphe">proposer un restaurent</p>
-          </a>
-        </li>
+          <li class="footer__item">
+            <a href="#" class="fitem__paragraphe">Mentions légales</a>
+          </li>
 
-        <li class="footer__item">
-          <a href="#">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p class="fitem__paragraphe">Devenir partenaire</p>
-          </a>
-        </li>
-
-        <li class="footer__item">
-          <a href="#" class="fitem__paragraphe">Mentions légales</a>
-        </li>
-
-        <li class="footer__item">
-          <a href="#" class="fitem__paragraphe">Contact</a>
-        </li>
-      </ul>
-    </footer>
+          <li class="footer__item">
+            <a href="#" class="fitem__paragraphe">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
