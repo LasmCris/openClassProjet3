@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disparitionLoader 3s 10.8s forwards;
+    animation: disparitionLoader 2s 8.4s forwards;
 }
 
 
@@ -20,7 +20,7 @@
     letter-spacing: 10px;
     font-weight: bolder;
     animation: flash 1.2s linear;
-    animation-iteration-count: 9;
+    animation-iteration-count: 7;
 
     @media (min-width: 769px) {
       font-size: 80px;

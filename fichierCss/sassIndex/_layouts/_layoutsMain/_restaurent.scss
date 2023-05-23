@@ -101,13 +101,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (min-width: 769px) {
+      font-size: 18px;
+    }
   }
 }
 
 .restaurent {
   .restaurent__H3 {
     width: 100%;
-    margin: 2px 0 10px 10px;
+    margin: 2px 0 5px 10px;
+    font-size: 16px;
+
+    @media (min-width: 769px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -116,7 +125,10 @@
     width: 100%;
     margin: 2px 0 10px 10px;
     font-weight: 100;
+    font-size: 16px;
+
+    @media (min-width: 769px) {
+      font-size: 18px;
+    }
   }
 }
-
-

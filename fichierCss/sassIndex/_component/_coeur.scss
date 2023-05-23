@@ -1,26 +1,39 @@
 .box__coeur {
-  width: 20%;
+  width: 10%;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 5px 2px 2px 2px;
+  margin: 5px 2px 8px 2px;
   flex-wrap: wrap;
+
+  @media (min-width: 769px) {
+      width: 20%;
+      justify-content: center;
+    }
 }
 
 .fa-heart {
-  width: 20%;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 35px;
-  color: white;
+  font-size: 26px;
+  background-image: url(/Maquette_Ohmyfood/images/gradient.png);
+  background-size: 300%;
+  background-position: top;
   margin-right: 10px;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
-  transition: color 1s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 7s ease-out;
+
+  @media (min-width: 769px) {
+      font-size: 35px;
+      margin-bottom: 5px;
+      margin-left: 56px;
+    }
 }
 
 .fa-heart:hover {
     cursor: pointer;
-    color: $secondaire; 
+    background-position: bottom;
 }
