@@ -409,7 +409,7 @@ form input {
 .fonctionnement__items .items__paragraphe {
   margin-left: 45px;
   width: 90%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 @media (min-width: 769px) {
@@ -692,10 +692,6 @@ main .main__detailResto {
   margin-bottom: 5px;
   transition: background-color 3s;
   font-weight: 100;
-}
-
-.titreH2EtDivBordure__h2:hover {
-  background-color: #ff79da;
 }
 
 .EPDTitreH2EtItem__titreH2EtDivBordure .titreH2EtDivBordure__divBordure {
