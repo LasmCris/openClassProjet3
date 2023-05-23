@@ -63,12 +63,10 @@ main {
   }
 }
 
-
 .detailResto__listeEPDbtn {
   width: 99%;
   display: flex;
   flex-direction: column;
-
 
   .listeEPDbtn {
     width: 99%;
@@ -82,7 +80,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     @media (min-width: 769px) {
       display: flex;
@@ -111,7 +108,6 @@ main {
   }
 }
 
-
 .EPDTitreH2EtItem__titreH2EtDivBordure {
   .titreH2EtDivBordure__divBordure {
     width: 63px;
@@ -135,7 +131,6 @@ main {
     }
   }
 }
-
 
 .EPDTitreH2EtItem__item {
   .item__h3Descrp {
@@ -225,7 +220,8 @@ main {
     margin-right: 2px;
     transform: rotate(0deg);
     animation-name: rotationC;
-    transition: margin-right 0.7s 0.1s ease-in-out, transform 0.7s 0.1s ease-in-out;
+    transition: margin-right 0.7s 0.1s ease-in-out,
+      transform 0.7s 0.1s ease-in-out;
   }
 }
 
