@@ -43,7 +43,7 @@ body {
 }
 
 .lettre {
-  color: #9356dc;
+  color: #9356DC;
   font-size: 40px;
   letter-spacing: 10px;
   font-weight: bolder;
@@ -69,8 +69,8 @@ body {
 }
 @keyframes flash {
   0% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc;
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
     transform: translateY(0);
   }
   90% {
@@ -78,8 +78,8 @@ body {
     text-shadow: none;
   }
   100% {
-    color: #9356dc;
-    text-shadow: 0 0 7px #9356dc;
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
     transform: translateY(10px);
   }
 }
@@ -181,11 +181,11 @@ body {
   align-items: center;
   font-size: 26px;
   -webkit-text-stroke: 2.5px black;
-  -webkit-background-clip: text; /* Préfixe WebKit */
-  -moz-background-clip: text; /* Préfixe Mozilla Firefox */
+  -webkit-background-clip: text; /* "Préfixe WebKit" */
+  -moz-background-clip: text; /* "Préfixe Mozilla Firefox" */
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(-45deg, #ff79da, #ff79da, white, white);
+  background-image: linear-gradient(-45deg, #FF79DA, #FF79DA, white, white);
   background-size: 450% 450%;
   background-position: 0%;
 }
@@ -363,6 +363,11 @@ form input {
   margin: 125px 2px 20px 30px;
   list-style: none;
 }
+@media (min-width: 769px) {
+  .fonctionnement .fonctionnement__titreH2 {
+    margin: 0 2px 20px 30px;
+  }
+}
 
 .fonctionnement .fonctionnement__grpItems {
   display: flex;
@@ -374,6 +379,7 @@ form input {
   .fonctionnement .fonctionnement__grpItems {
     flex-direction: row;
     justify-content: space-between;
+    margin: 48px 2px 5px 2px;
   }
 }
 
@@ -405,7 +411,7 @@ form input {
   justify-content: center;
   align-items: center;
   color: white;
-  background: #9356dc;
+  background: #9356DC;
   font-size: 15px;
   height: 30px;
   width: 30px;
@@ -436,7 +442,7 @@ form input {
   }
 }
 .fonctionnement__items .fa-solid:hover {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .fonctionnement__items .items__paragraphe {
@@ -471,12 +477,12 @@ form input {
   }
 }
 .restaurant .restaurant__titreH2 {
-  margin-top: 47px;
   margin-left: 30px;
 }
 @media (min-width: 769px) {
   .restaurant .restaurant__titreH2 {
     margin-left: 87px;
+    margin-top: 47px;
   }
 }
 
@@ -526,7 +532,7 @@ form input {
   height: 75%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant .restaurant__nouveau {
@@ -589,6 +595,11 @@ form input {
     margin-left: 33%;
   }
 }
+@media (max-width: 320px) {
+  .logo--headerResto {
+    font-size: 20px;
+  }
+}
 
 @media (min-width: 769px) {
   .box__coeur--Resto {
@@ -644,7 +655,7 @@ main {
 main .main__photo {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 769px) {
   main .main__photo {
@@ -781,7 +792,7 @@ main .main__detailResto {
   width: 0%;
   opacity: 0;
   height: 100%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -829,13 +840,12 @@ main .main__detailResto {
   background-color: #ffffff;
   font-size: larger;
   font-weight: 900;
-  color: #99e2d0;
+  color: #99E2D0;
   border-radius: 50%;
   margin-right: 2px;
   transform: rotate(0deg);
   animation-name: rotationC;
-  transition: margin-right 0.7s 0.1s ease-in-out,
-    transform 0.7s 0.1s ease-in-out;
+  transition: margin-right 0.7s 0.1s ease-in-out, transform 0.7s 0.1s ease-in-out;
 }
 
 .EPDTitreH2EtItem__item:hover {
@@ -969,4 +979,4 @@ footer .footer__logo {
 }
 .footer__item i {
   margin-right: 10px;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

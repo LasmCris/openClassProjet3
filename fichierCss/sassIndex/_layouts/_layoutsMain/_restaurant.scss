@@ -11,11 +11,11 @@
   }
 
   .restaurant__titreH2 {
-    margin-top: 47px;
     margin-left: 30px;
 
     @media (min-width: 769px) {
       margin-left: 87px;
+      margin-top: 47px;
     }
   }
 }
