@@ -23,7 +23,7 @@ body {
 }
 @media (min-width: 769px) {
   .page {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .lettre {
-  color: #9356DC;
+  color: #9356dc;
   font-size: 40px;
   letter-spacing: 10px;
   font-weight: bolder;
@@ -69,8 +69,8 @@ body {
 }
 @keyframes flash {
   0% {
-    color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
+    color: #9356dc;
+    text-shadow: 0 0 7px #9356dc;
     transform: translateY(0);
   }
   90% {
@@ -78,8 +78,8 @@ body {
     text-shadow: none;
   }
   100% {
-    color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
+    color: #9356dc;
+    text-shadow: 0 0 7px #9356dc;
     transform: translateY(10px);
   }
 }
@@ -153,6 +153,11 @@ body {
 .logo--header {
   height: 40px;
 }
+@media (max-width: 320px) {
+  .logo--header {
+    height: 30px;
+  }
+}
 
 .box__coeur {
   width: 10%;
@@ -170,20 +175,19 @@ body {
 }
 
 .fa-heart {
+  margin-right: 10px;
   width: 100%;
   display: flex;
   align-items: center;
   font-size: 26px;
-  background-image: url(/gradient.png);
-  background-size: 300%;
-  background-position: top;
-  margin-right: 10px;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke: 2.5px black;
   -webkit-background-clip: text; /* Préfixe WebKit */
   -moz-background-clip: text; /* Préfixe Mozilla Firefox */
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: background-position 7s ease-out;
+  color: transparent;
+  background-image: linear-gradient(-45deg, #ff79da, #ff79da, white, white);
+  background-size: 450% 450%;
+  background-position: 0%;
 }
 @media (min-width: 769px) {
   .fa-heart {
@@ -195,9 +199,20 @@ body {
 
 .fa-heart:hover {
   cursor: pointer;
-  background-position: bottom;
+  animation: gradient 2s ease-in forwards;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 .header--index {
   width: 100%;
   height: 73px;
@@ -315,11 +330,21 @@ form input {
   text-align: center;
   font-size: 33px;
 }
+@media (max-width: 320px) {
+  .sousHeader .sousHeader__titreH1 {
+    font-size: 25px;
+  }
+}
 
 .sousHeader .sousHeader__paragraphe {
   text-align: center;
   font-size: 18px;
   font-weight: 100;
+}
+@media (max-width: 320px) {
+  .sousHeader .sousHeader__paragraphe {
+    font-size: 15px;
+  }
 }
 
 .fonctionnement {
@@ -327,6 +352,7 @@ form input {
   display: flex;
   flex-direction: column;
   margin: 50px 2px 50px 2px;
+  background-color: white;
 }
 @media (min-width: 769px) {
   .fonctionnement {
@@ -334,7 +360,7 @@ form input {
   }
 }
 .fonctionnement .fonctionnement__titreH2 {
-  margin: 2px 2px 20px 30px;
+  margin: 125px 2px 20px 30px;
   list-style: none;
 }
 
@@ -342,7 +368,7 @@ form input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 2px 2px 2px;
+  margin: 50px 2px 126px 2px;
 }
 @media (min-width: 769px) {
   .fonctionnement .fonctionnement__grpItems {
@@ -352,15 +378,14 @@ form input {
 }
 
 .fonctionnement .fonctionnement__items {
-  background-color: rgb(242, 242, 242);
+  background-color: #f6f6f6;
   width: 88%;
   height: 95px;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin-bottom: 50px;
   box-shadow: 2px 2px 10px #cccccc;
   position: relative;
 }
@@ -380,7 +405,7 @@ form input {
   justify-content: center;
   align-items: center;
   color: white;
-  background: #9356DC;
+  background: #9356dc;
   font-size: 15px;
   height: 30px;
   width: 30px;
@@ -405,8 +430,13 @@ form input {
     font-size: 20px;
   }
 }
+@media (max-width: 320px) {
+  .fonctionnement__items .fa-solid {
+    font-size: 20px;
+  }
+}
 .fonctionnement__items .fa-solid:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .fonctionnement__items .items__paragraphe {
@@ -421,8 +451,14 @@ form input {
     margin-left: 23px;
   }
 }
+@media (max-width: 320px) {
+  .fonctionnement__items .items__paragraphe {
+    font-size: 14px;
+    margin-left: 25px;
+  }
+}
 
-.restaurent {
+.restaurant {
   width: 100%;
   background-color: rgb(247, 244, 244);
   display: flex;
@@ -430,21 +466,21 @@ form input {
   margin: 20px 2px 2px 2px;
 }
 @media (min-width: 769px) {
-  .restaurent {
+  .restaurant {
     width: 100%;
   }
 }
-.restaurent .restaurent__titreH2 {
+.restaurant .restaurant__titreH2 {
   margin-top: 47px;
   margin-left: 30px;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent__titreH2 {
+  .restaurant .restaurant__titreH2 {
     margin-left: 87px;
   }
 }
 
-.restaurent .restaurent__grpPhotos {
+.restaurant .restaurant__grpPhotos {
   width: 99%;
   display: flex;
   flex-direction: column;
@@ -453,13 +489,13 @@ form input {
   margin-bottom: 76px;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent__grpPhotos {
+  .restaurant .restaurant__grpPhotos {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-.restaurent .restaurent_liens {
+.restaurant .restaurant_liens {
   width: 93%;
   height: 320px;
   margin: 30px 5px;
@@ -471,12 +507,12 @@ form input {
   box-shadow: 3px 3px 10px #cccccc;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent_liens {
+  .restaurant .restaurant_liens {
     width: 45%;
   }
 }
 
-.restaurent .restaurent__figure {
+.restaurant .restaurant__figure {
   position: relative;
   width: 100%;
   height: 100%;
@@ -485,15 +521,15 @@ form input {
   flex-direction: column;
 }
 
-.restaurent .restaurent__photos {
+.restaurant .restaurant__photos {
   width: 100%;
   height: 75%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-.restaurent .restaurent__nouveau {
+.restaurant .restaurant__nouveau {
   position: absolute;
   top: 10px;
   right: 5px;
@@ -502,7 +538,7 @@ form input {
   padding: 5px;
 }
 
-.restaurent .restaurent__figcaption {
+.restaurant .restaurant__figcaption {
   height: 25%;
   display: flex;
   justify-content: space-between;
@@ -510,37 +546,37 @@ form input {
   border-radius: 0 0 20px 20px;
 }
 
-.restaurent .restaurent__H3Quartier {
+.restaurant .restaurant__H3Quartier {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent__H3Quartier {
+  .restaurant .restaurant__H3Quartier {
     font-size: 18px;
   }
 }
 
-.restaurent .restaurent__H3 {
+.restaurant .restaurant__H3 {
   width: 100%;
   margin: 2px 0 5px 10px;
   font-size: 16px;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent__H3 {
+  .restaurant .restaurant__H3 {
     font-size: 18px;
   }
 }
 
-.restaurent .restaurent__quartier {
+.restaurant .restaurant__quartier {
   width: 100%;
   margin: 2px 0 10px 10px;
   font-weight: 100;
   font-size: 16px;
 }
 @media (min-width: 769px) {
-  .restaurent .restaurent__quartier {
+  .restaurant .restaurant__quartier {
     font-size: 18px;
   }
 }
@@ -608,7 +644,7 @@ main {
 main .main__photo {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 769px) {
   main .main__photo {
@@ -745,7 +781,7 @@ main .main__detailResto {
   width: 0%;
   opacity: 0;
   height: 100%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -793,12 +829,13 @@ main .main__detailResto {
   background-color: #ffffff;
   font-size: larger;
   font-weight: 900;
-  color: #99E2D0;
+  color: #99e2d0;
   border-radius: 50%;
   margin-right: 2px;
   transform: rotate(0deg);
   animation-name: rotationC;
-  transition: margin-right 0.7s 0.1s ease-in-out, transform 0.7s 0.1s ease-in-out;
+  transition: margin-right 0.7s 0.1s ease-in-out,
+    transform 0.7s 0.1s ease-in-out;
 }
 
 .EPDTitreH2EtItem__item:hover {
@@ -874,11 +911,9 @@ main .main__detailResto {
 footer {
   color: white;
   background-color: rgb(49, 49, 49);
-  width: 100%;
   height: 20%;
 }
 footer .footer__box {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -934,4 +969,4 @@ footer .footer__logo {
 }
 .footer__item i {
   margin-right: 10px;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

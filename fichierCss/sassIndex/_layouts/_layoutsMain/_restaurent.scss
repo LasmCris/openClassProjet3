@@ -1,5 +1,5 @@
-// Ceci est le block "RESTAURENTS"
-.restaurent {
+// Ceci est le block "restaurantS"
+.restaurant {
   width: 100%;
   background-color: rgb(247, 244, 244);
   display: flex;
@@ -10,7 +10,7 @@
     width: 100%;
   }
 
-  .restaurent__titreH2 {
+  .restaurant__titreH2 {
     margin-top: 47px;
     margin-left: 30px;
 
@@ -20,8 +20,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__grpPhotos {
+.restaurant {
+  .restaurant__grpPhotos {
     width: 99%;
     display: flex;
     flex-direction: column;
@@ -36,8 +36,8 @@
   }
 }
 
-.restaurent {
-  .restaurent_liens {
+.restaurant {
+  .restaurant_liens {
     width: 93%;
     height: 320px;
     margin: 30px 5px;
@@ -54,8 +54,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__figure {
+.restaurant {
+  .restaurant__figure {
     position: relative;
     width: 100%;
     height: 100%;
@@ -65,8 +65,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__photos {
+.restaurant {
+  .restaurant__photos {
     width: 100%;
     height: 75%;
     border-radius: 20px 20px 0 0;
@@ -74,8 +74,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__nouveau {
+.restaurant {
+  .restaurant__nouveau {
     position: absolute;
     top: 10px;
     right: 5px;
@@ -85,8 +85,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__figcaption {
+.restaurant {
+  .restaurant__figcaption {
     height: 25%;
     display: flex;
     justify-content: space-between;
@@ -95,8 +95,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__H3Quartier {
+.restaurant {
+  .restaurant__H3Quartier {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -108,8 +108,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__H3 {
+.restaurant {
+  .restaurant__H3 {
     width: 100%;
     margin: 2px 0 5px 10px;
     font-size: 16px;
@@ -120,8 +120,8 @@
   }
 }
 
-.restaurent {
-  .restaurent__quartier {
+.restaurant {
+  .restaurant__quartier {
     width: 100%;
     margin: 2px 0 10px 10px;
     font-weight: 100;
