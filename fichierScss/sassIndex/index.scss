@@ -1,4 +1,5 @@
 @import "./_utils/_variables";
+@import "./_pages/_pagesrestaurants/_layoutsResto/mainResto";
 @import "./_base/_base";
 @import "./_component/_loaderIndex";
 @import "./_component/_button";
@@ -12,5 +13,4 @@
 @import "./_pages/_pagesrestaurants/_componentResto/logoHeaderResto";
 @import "./_pages/_pagesrestaurants/_componentResto/coeurResto";
 @import "./_pages/_pagesrestaurants/_layoutsResto/headerResto";
-@import "./_pages/_pagesrestaurants/_layoutsResto/mainResto";
 @import "./_layouts/footer";
