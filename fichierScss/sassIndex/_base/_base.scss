@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a:visited {
+  color: black;
+}
+
+//LE BODY
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  min-width: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 769px) {
+    max-width: 100%;
+    }
+}

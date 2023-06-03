@@ -1,0 +1,11 @@
+.logo--headerResto {
+  height: 40px;
+
+  @media (min-width: 1024px) {
+    margin-left: 33%;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
+}

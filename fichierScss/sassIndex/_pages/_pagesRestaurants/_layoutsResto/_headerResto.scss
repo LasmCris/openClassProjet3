@@ -1,0 +1,34 @@
+.header--resto {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  align-items: center;
+}
+
+
+.header__logoBox {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+    }
+  }
+
+.header__nav {
+    width: 8%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header__nav {
+  .fa-solid {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+}

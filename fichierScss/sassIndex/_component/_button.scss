@@ -1,0 +1,36 @@
+.sousHeader {
+  .sousHeader__contentBtn {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 50px 0;
+  }
+}
+
+.listeEPDbtn--bouton {
+  width: 99%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCmd {
+    background-image: linear-gradient(to top, #9356dc, #ff79da);
+    width: 200px;
+    border-radius: 137px;
+    padding: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    transition: background-image 4s ease;
+  }
+
+  .btnCmd:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #9d66e0, #ff89de);
+    box-shadow: 2px 2px 10px rgb(182, 182, 182);
+}
+
+.btnCmd:visited {
+  color: white;
+}

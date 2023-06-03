@@ -1,0 +1,54 @@
+.box__coeur {
+  width: 10%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin: 5px 2px 8px 2px;
+  flex-wrap: wrap;
+
+  @media (min-width: 769px) {
+      width: 20%;
+      justify-content: center;
+    }
+}
+
+.fa-heart {
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  -webkit-text-stroke: 2.5px black;
+  -webkit-background-clip: text; /* "Préfixe WebKit" */
+  -moz-background-clip: text; /* "Préfixe Mozilla Firefox" */
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(-45deg, $secondaire, $secondaire, white, white);
+  background-size: 450% 450%;
+  background-position: 0%;
+
+  @media (min-width: 769px) {
+      font-size: 35px;
+      margin-bottom: 5px;
+      margin-left: 56px;
+    }
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    animation: gradient 2s ease forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
